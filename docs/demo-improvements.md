@@ -23,6 +23,12 @@ The final production-build browser run passed **96/96 tests in 2.5 minutes**, re
 
 This is WebKit on Windows with iPhone emulation, not a physical iPhone or macOS Safari acceptance claim. The earlier hosted download delays were observed but their upstream cause was not established. Font delivery is now explicitly preloaded; no percentage speed improvement or field performance result is claimed.
 
+## Hosted release
+
+Deployed source `7ddf93b35688cefc8b49f4bb75c8eecef2641f0c` to [eventbooking-pi.vercel.app](https://eventbooking-pi.vercel.app), deployment `dpl_2Fac6Q3518N6Lr5zjJRDLmoyAhEM`. Vercel confirmed `READY`, production target and Node 22.x. The immutable deployment URL is https://eventbooking-5fwmfcfzn-elaielaielai1113s-projects.vercel.app.
+
+All **12 hosted improvement checks passed in 55.6 seconds** across desktop Chromium, Pixel 5 Chromium and iPhone 13 WebKit. Retries were disabled; each test had a 90-second allowance for network delivery. See [hosted test output](evidence/improvements-hosted.txt) and [deployment metadata](evidence/improvements-deployment.json). A separate mobile Pavilion check returned HTTP 200, no JavaScript errors, no overflow/broken images, four font preloads and preserved `noindex, nofollow`; see [hosted smoke](evidence/improvements-hosted-smoke.json).
+
 ## Reproduce
 
 ```powershell

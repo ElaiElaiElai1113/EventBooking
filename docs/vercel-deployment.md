@@ -1,5 +1,7 @@
 # Vercel demo deployment
 
+The initial deployment is recorded below. For the subsequent six demo improvements and the latest verified source/deployment, see [the improvement release](demo-improvements.md#hosted-release).
+
 20 September 2026. The user explicitly requested Vercel hosting after committing and pushing the demo to GitHub.
 
 - Public URL: https://eventbooking-pi.vercel.app

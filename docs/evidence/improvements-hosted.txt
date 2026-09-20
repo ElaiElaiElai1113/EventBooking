@@ -1,0 +1,23 @@
+
+Running 12 tests using 1 worker
+
+(node:18708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\improvements.spec.ts:5:1 › guided inquiry handoffs keep the same record through receipt review (7.4s)
+  ok  2 [chromium] › tests\e2e\improvements.spec.ts:63:1 › merchant receipt handoff opens its application, not another applicant (5.2s)
+  ok  3 [chromium] › tests\e2e\improvements.spec.ts:80:1 › venue gallery and anonymous calendar expose meaningful sample states (4.7s)
+  ok  4 [chromium] › tests\e2e\improvements.spec.ts:114:1 › compact setup navigation preserves drafts and supports the venue handoff (3.7s)
+(node:35848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 [mobile-chromium] › tests\e2e\improvements.spec.ts:5:1 › guided inquiry handoffs keep the same record through receipt review (3.7s)
+  ok  6 [mobile-chromium] › tests\e2e\improvements.spec.ts:63:1 › merchant receipt handoff opens its application, not another applicant (2.8s)
+  ok  7 [mobile-chromium] › tests\e2e\improvements.spec.ts:80:1 › venue gallery and anonymous calendar expose meaningful sample states (2.5s)
+  ok  8 [mobile-chromium] › tests\e2e\improvements.spec.ts:114:1 › compact setup navigation preserves drafts and supports the venue handoff (5.5s)
+(node:17952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [iphone-webkit] › tests\e2e\improvements.spec.ts:5:1 › guided inquiry handoffs keep the same record through receipt review (6.4s)
+  ok 10 [iphone-webkit] › tests\e2e\improvements.spec.ts:63:1 › merchant receipt handoff opens its application, not another applicant (3.5s)
+  ok 11 [iphone-webkit] › tests\e2e\improvements.spec.ts:80:1 › venue gallery and anonymous calendar expose meaningful sample states (3.3s)
+  ok 12 [iphone-webkit] › tests\e2e\improvements.spec.ts:114:1 › compact setup navigation preserves drafts and supports the venue handoff (5.2s)
+
+  12 passed (55.6s)
