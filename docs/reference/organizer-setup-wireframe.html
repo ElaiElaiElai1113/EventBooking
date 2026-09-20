@@ -1,0 +1,207 @@
+<style>
+#event-setup-wireframe{--ew-bg:light-dark(#ffffff,#202120);--ew-soft:light-dark(#f5f5f2,#292b29);--ew-text:light-dark(#242923,#eef0eb);--ew-muted:light-dark(#646b62,#b3bbb0);--ew-line:light-dark(#d9ddd5,#474d45);--ew-active:light-dark(#303b2e,#d8e2d2);--ew-on-active:light-dark(#ffffff,#20271e);--ew-alert:light-dark(#8e4425,#f2b18d);font-family:Arial,sans-serif;font-size:14px;line-height:1.5;color:var(--ew-text);background:transparent;width:100%}
+#event-setup-wireframe *{box-sizing:border-box}
+#event-setup-wireframe [hidden]{display:none!important}
+#event-setup-wireframe button,#event-setup-wireframe input,#event-setup-wireframe select,#event-setup-wireframe textarea{font:inherit;color:inherit}
+#event-setup-wireframe button{border:1px solid var(--ew-line);border-radius:5px;background:var(--ew-bg);padding:9px 13px;text-align:left;min-height:42px;white-space:normal}
+#event-setup-wireframe button:disabled{opacity:.5;cursor:not-allowed}
+#event-setup-wireframe button.ew-primary,#event-setup-wireframe button[aria-pressed=true]{background:var(--ew-active);border-color:var(--ew-active);color:var(--ew-on-active)}
+#event-setup-wireframe .ew-quiet{background:transparent;border-color:transparent;padding-left:0;text-decoration:underline;text-underline-offset:3px}
+#event-setup-wireframe .ew-reviewbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+#event-setup-wireframe .ew-reviewbar select{padding:7px 10px;border:1px solid var(--ew-line);border-radius:5px;background:var(--ew-bg);max-width:100%}
+#event-setup-wireframe .ew-reviewbar label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#event-setup-wireframe .ew-shell{background:var(--ew-bg);border:1px solid var(--ew-line);border-radius:8px;overflow:hidden}
+#event-setup-wireframe .ew-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid var(--ew-line);flex-wrap:wrap}
+#event-setup-wireframe .ew-brand{font-weight:600;letter-spacing:.02em}
+#event-setup-wireframe .ew-muted{color:var(--ew-muted)}
+#event-setup-wireframe small,#event-setup-wireframe .ew-small{font-size:12px}
+#event-setup-wireframe .ew-layout{display:grid;grid-template-columns:185px minmax(0,1fr)}
+#event-setup-wireframe .ew-steps{padding:22px 13px;border-right:1px solid var(--ew-line);background:var(--ew-soft);display:flex;flex-direction:column;gap:7px;align-items:stretch}
+#event-setup-wireframe .ew-steps button{display:flex;gap:10px;align-items:center;border-color:transparent;background:transparent}
+#event-setup-wireframe .ew-steps button[aria-current=step]{background:var(--ew-active);color:var(--ew-on-active)}
+#event-setup-wireframe .ew-number{font-variant-numeric:tabular-nums;opacity:.8}
+#event-setup-wireframe .ew-main{padding:26px;min-width:0}
+#event-setup-wireframe h1{font-size:23px;line-height:1.3;font-weight:600;margin:4px 0 8px;letter-spacing:-.03em}
+#event-setup-wireframe h2{font-size:16px;line-height:1.4;font-weight:600;margin:22px 0 12px}
+#event-setup-wireframe h3{font-size:14px;font-weight:600;margin:0 0 7px}
+#event-setup-wireframe p{margin:8px 0 14px}
+#event-setup-wireframe .ew-kicker{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ew-muted)}
+#event-setup-wireframe .ew-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+#event-setup-wireframe .ew-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+#event-setup-wireframe .ew-field>span{font-weight:600}
+#event-setup-wireframe .ew-field input,#event-setup-wireframe .ew-field textarea{display:block;width:100%;border:1px solid var(--ew-line);border-radius:4px;padding:9px 11px;background:var(--ew-bg);resize:vertical}
+#event-setup-wireframe .ew-field input[readonly],#event-setup-wireframe .ew-field textarea[readonly]{background:var(--ew-soft)}
+#event-setup-wireframe .ew-full{grid-column:1/-1}
+#event-setup-wireframe .ew-notice{padding:12px 14px;background:var(--ew-soft);border-left:3px solid var(--ew-line);margin:18px 0}
+#event-setup-wireframe .ew-notice p:last-child{margin-bottom:0}
+#event-setup-wireframe .ew-alert{color:var(--ew-alert)}
+#event-setup-wireframe .ew-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--ew-line);margin-top:26px;padding-top:18px}
+#event-setup-wireframe .ew-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#event-setup-wireframe .ew-spread{justify-content:space-between}
+#event-setup-wireframe .ew-status{font-size:12px;padding:4px 8px;border:1px solid var(--ew-line);border-radius:4px;display:inline-block;background:var(--ew-soft)}
+#event-setup-wireframe .ew-map{padding:16px;border:1px solid var(--ew-line);border-radius:5px;margin-top:14px}
+#event-setup-wireframe .ew-booths{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+#event-setup-wireframe .ew-booths button{padding:10px 0;text-align:center;min-width:0;min-height:46px;font-variant-numeric:tabular-nums}
+#event-setup-wireframe .ew-walkway{text-align:center;padding:18px 0;color:var(--ew-muted);letter-spacing:.1em;font-size:12px}
+#event-setup-wireframe .ew-detail{padding-top:15px;margin-top:15px;border-top:1px solid var(--ew-line)}
+#event-setup-wireframe .ew-detail p{margin:6px 0 0}
+#event-setup-wireframe .ew-list{list-style:none;padding:0;margin:10px 0}
+#event-setup-wireframe .ew-list li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--ew-line)}
+#event-setup-wireframe .ew-list li:last-child{border-bottom:0}
+#event-setup-wireframe .ew-list strong{font-weight:600}
+#event-setup-wireframe details{border-bottom:1px solid var(--ew-line);padding:13px 0}
+#event-setup-wireframe summary{font-weight:600}
+#event-setup-wireframe details p{margin:10px 0 0}
+#event-setup-wireframe .ew-choice{display:flex;gap:10px;align-items:center;padding:14px;border:1px solid var(--ew-line);border-radius:5px}
+#event-setup-wireframe .ew-choice input{accent-color:var(--ew-active);width:18px;height:18px}
+#event-setup-wireframe .ew-footnote{font-size:12px;color:var(--ew-muted);padding:10px 0 0}
+#event-setup-wireframe .ew-announcement:empty{display:none}
+#event-setup-wireframe .ew-announcement{padding:10px 14px;margin-top:12px;background:var(--ew-soft)}
+#event-setup-wireframe .ew-two-col{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px}
+#event-setup-wireframe .ew-preview-aside{border-left:1px solid var(--ew-line);padding-left:24px}
+#event-setup-wireframe .ew-coordination{padding:16px;background:var(--ew-soft);border:1px solid var(--ew-line);border-radius:5px;margin:12px 0 18px}
+#event-setup-wireframe .ew-coordination select{padding:9px 11px;border:1px solid var(--ew-line);border-radius:4px;background:var(--ew-bg);max-width:100%}
+#event-setup-wireframe .ew-review-check{margin:16px 0;align-items:flex-start}
+#event-setup-wireframe .ew-review-check input{flex-shrink:0;margin-top:2px}
+#event-setup-wireframe.ew-top-nav .ew-layout{grid-template-columns:1fr}
+#event-setup-wireframe.ew-top-nav .ew-steps{flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--ew-line);padding:10px 16px}
+#event-setup-wireframe.ew-top-nav .ew-steps button{flex:1 1 120px}
+@media(max-width:720px){#event-setup-wireframe .ew-two-col{grid-template-columns:1fr}#event-setup-wireframe .ew-preview-aside{border-left:0;border-top:1px solid var(--ew-line);padding:14px 0 0}}
+@media(max-width:620px){#event-setup-wireframe .ew-layout{grid-template-columns:1fr}#event-setup-wireframe .ew-steps{flex-direction:row;flex-wrap:wrap;padding:10px;border-right:0;border-bottom:1px solid var(--ew-line);gap:4px}#event-setup-wireframe .ew-steps button{flex:1 1 125px;padding:8px}#event-setup-wireframe .ew-main{padding:20px 16px}#event-setup-wireframe .ew-header{padding:14px 16px}#event-setup-wireframe .ew-grid{grid-template-columns:1fr}#event-setup-wireframe .ew-booths{gap:5px}#event-setup-wireframe .ew-map{padding:10px}#event-setup-wireframe .ew-reviewbar{align-items:flex-start}#event-setup-wireframe .ew-reviewbar label{width:100%}#event-setup-wireframe .ew-reviewbar select{flex:1}#event-setup-wireframe input,#event-setup-wireframe textarea,#event-setup-wireframe select{font-size:16px}}
+</style>
+<div id="event-setup-wireframe" aria-label="Organizer event setup wireframe">
+  <div class="ew-reviewbar">
+    <span class="ew-small ew-muted">Planning wireframe · fictional example</span>
+    <label>Review as <select id="ew-role" aria-label="Review perspective"><option value="organizer">Organizer</option><option value="venue">Venue</option><option value="merchant">Merchant preview</option></select></label>
+    <button class="ew-quiet cursor-interaction" type="button" data-action="restart">Restart example</button>
+  </div>
+  <div id="ew-app" class="ew-shell"></div>
+  <div id="ew-announcement" class="ew-announcement" aria-live="polite" role="status"></div>
+  <div class="ew-footnote">Proposed screens, sample terms and simulated actions. No real event, message, reservation or payment is created.</div>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('event-setup-wireframe');
+  const app = root.querySelector('#ew-app');
+  const role = root.querySelector('#ew-role');
+  const live = root.querySelector('#ew-announcement');
+  const steps = ['Event details','Venue & layout','Applications','Payments & policies','Preview & publish'];
+  const defaults = {view:'organizer',step:0,payment:'deposit',review:'pending',version:1,booth:23,published:false,exited:false,mapView:'map',packetReviewed:false,coordinationOpen:false,thread:[],meeting:null,meetingMode:'online'};
+  const design = {navigation:'Side steps'};
+  let state = {...defaults};
+  function restore(snapshot) {
+    const x = snapshot?.privateContent?.wireframe;
+    if (!x || ![1,2].includes(x.schema)) return;
+    state = {...defaults, view:['organizer','venue','merchant'].includes(x.view)?x.view:'organizer',step:Number.isInteger(x.step)&&x.step>=0&&x.step<5?x.step:0,payment:x.payment==='full'?'full':'deposit',review:['pending','changes','agreed'].includes(x.review)?x.review:'pending',version:x.version===2?2:1,booth:Number.isInteger(x.booth)&&x.booth>=21&&x.booth<=32?x.booth:23,published:x.published===true,exited:x.exited===true,mapView:x.mapView==='list'?'list':'map'};
+    state.version=Number.isInteger(x.version)&&x.version>=1&&x.version<=100?x.version:1;
+    state.packetReviewed=x.packetReviewed===true;
+    state.coordinationOpen=x.coordinationOpen===true;
+    state.thread=Array.isArray(x.thread)?x.thread.filter(t=>t&&['organizer','venue'].includes(t.by)&&Number.isInteger(t.version)&&t.version>=1&&t.version<=100).slice(-8).map(t=>({by:t.by,version:t.version})):[];
+    state.meetingMode=x.meetingMode==='inperson'?'inperson':'online';
+    const m=x.meeting;
+    if(m&&['proposed','confirmed','declined','cancelled'].includes(m.status)&&['organizer','venue'].includes(m.by))state.meeting={status:m.status,by:m.by,slot:m.slot===1?1:0,mode:m.mode==='inperson'?'inperson':'online'};
+    if (state.published) state.review='agreed';
+    if (state.review==='agreed') state.packetReviewed=true;
+    design.navigation=x.navigation==='Top steps'?'Top steps':'Side steps';
+  }
+  restore(window.openai?.widgetState);
+  function save() {
+    if (window.openai?.setWidgetState) window.openai.setWidgetState({modelContent:{wireframe:'organizer-event-setup',perspective:state.view,step:steps[state.step],paymentMode:state.payment,venueReview:state.review,packetReviewed:state.packetReviewed,meetingStatus:state.meeting?.status||'none',publishedExample:state.published,navigation:design.navigation},privateContent:{wireframe:{...state,schema:2,navigation:design.navigation}}}).catch(()=>{});
+  }
+  const money = n => '₱'+n.toLocaleString('en-PH');
+  const status = () => ({pending:'Awaiting venue agreement',changes:'Venue requested changes',agreed:'Venue agreement recorded'})[state.review];
+  const button = (label,action,primary=false,disabled=false) => `<button type="button" class="${primary?'ew-primary ':''}cursor-interaction" data-action="${action}" ${disabled?'disabled':''}>${label}</button>`;
+  const field = (label,value,full=false,long=false) => `<label class="ew-field ${full?'ew-full':''}"><span>${label}</span>${long?`<textarea readonly rows="2">${value}</textarea>`:`<input readonly value="${value}">`}</label>`;
+  function heading(kicker,title,description='') { return `<div class="ew-kicker">${kicker}</div><h1>${title}</h1>${description?`<p class="ew-muted">${description}</p>`:''}`; }
+  function packet(forVenue=false) {
+    return `<h2>Required review packet</h2><div class="ew-row ew-spread"><span class="ew-small ew-muted">Sample Hall's example requirements · version ${state.version}</span><span class="ew-status">3 supplied · ${state.packetReviewed?'reviewed':'awaiting review'}</span></div><details><summary>Venue information and terms · supplied by venue</summary><p>Sample Hall · Davao City. Access: 13 November, 14:00 to 15 November, 22:00. Keep the central walkway clear; no open flames. Rental: ₱20,000 with ₱10,000 sample balance remaining.</p></details><details><summary>Event brief and contact · supplied by organizer</summary><p>Sample Davao Makers Market · 14–15 November 2026. Local crafts, food and independent brands. Responsible organizer: Sample Market Team, events@example.com.</p></details><details><summary>Layout and equipment plan · supplied by organizer</summary><p>12 booths, two rows, clear central walkway, and 10 eligible adjacent pairs. Booths 23, 24, 30 and 31 have power.${state.version>=2?' Revised limit: 500 W maximum per powered booth.':' Proposed equipment use must follow venue operating limits.'} The current booth map appears below.</p></details>${forVenue?`<label class="ew-choice ew-review-check"><input type="checkbox" name="ew-packet-reviewed" ${state.packetReviewed?'checked':''} ${state.review==='agreed'||state.review==='changes'?'disabled':''}><span>I reviewed all required information for version ${state.version}.</span></label>${state.review==='changes'?'<p class="ew-small ew-alert">Resolve the requested change and review the revised packet before agreeing.</p>':''}`:'<p class="ew-small ew-muted">The venue confirms review. Supplied items are not automatically approved.</p>'}<p class="ew-small ew-muted">Inline sample information · actual document types depend on venue requirements.</p>`;
+  }
+  function coordination() {
+    const isVenue=state.view==='venue';
+    const actor=isVenue?'Sample Hall':'Sample Market Team';
+    const sample=isVenue?'Please confirm the equipment limits in the current layout plan. We can arrange a short meeting if needed.':'The event information is available above. Let us know if any additional detail or a meeting would help.';
+    const m=state.meeting;
+    const otherProposed=m&&m.status==='proposed'&&m.by!==state.view;
+    const mode=m?m.mode:state.meetingMode;
+    const time=m?.slot===1?'19 Oct 2026, 16:30–17:00':'19 Oct 2026, 15:00–15:30';
+    const place=mode==='online'?'Online · meeting link to be supplied by the proposer':'In person · Sample Hall reception';
+    const meetingLabel=m?({proposed:'Time proposed · awaiting reply',confirmed:'Meeting confirmed',declined:'Meeting declined',cancelled:'Meeting cancelled'})[m.status]:'No meeting requested';
+    return `<button type="button" class="ew-quiet cursor-interaction" data-action="coordination" aria-expanded="${state.coordinationOpen}" aria-controls="ew-coordination">Messages and meetings${state.thread.length?' · '+state.thread.length+(state.thread.length===1?' message':' messages'):''}</button><section id="ew-coordination" class="ew-coordination" ${state.coordinationOpen?'':'hidden'} aria-label="Private venue-organizer coordination"><div class="ew-small ew-muted">Private to this event's organizer and venue · sample actions only</div><h2>Messages</h2>${state.thread.length?`<ul class="ew-list">${state.thread.map(t=>`<li><div><strong>${t.by==='venue'?'Sample Hall':'Sample Market Team'}</strong><span class="ew-small ew-muted"> · regarding version ${t.version}</span><p>${t.by==='venue'?'Please confirm the equipment limits in the current layout plan. We can arrange a short meeting if needed.':'The event information is available above. Let us know if any additional detail or a meeting would help.'}</p></div></li>`).join('')}</ul>`:'<p class="ew-muted">No messages in this sample conversation.</p>'}<label class="ew-field"><span>Example message from ${actor}</span><textarea readonly rows="3">${sample}</textarea></label><div class="ew-row" style="margin-top:12px">${button('Add sample message','message')}</div><h2>Optional meeting</h2><strong>${meetingLabel}</strong>${m?`<p>${time} · Philippine time<br>${place}</p><p class="ew-small">Agenda: confirm the layout and equipment plan.<br>Participants: Sample Market Team and Sample Hall.</p>`:''}${!m||['declined','cancelled'].includes(m.status)?`<p class="ew-small">Example proposal: 19 Oct 2026, 15:00–15:30 · Philippine time<br>Agenda: confirm the layout and equipment plan.</p><label class="ew-field"><span>Meeting format</span><select id="ew-meeting-mode"><option value="online" ${state.meetingMode==='online'?'selected':''}>Online</option><option value="inperson" ${state.meetingMode==='inperson'?'selected':''}>In person at Sample Hall</option></select></label><div class="ew-row" style="margin-top:12px">${button('Propose sample meeting','propose')}</div>`:`<div class="ew-row">${otherProposed?button('Accept proposed time','accept-meeting')+button('Suggest another time','reschedule')+button('Decline meeting','decline-meeting'):m.status==='proposed'?'<span class="ew-small ew-muted">Waiting for the other party to respond.</span>':''}${button('Cancel meeting','cancel-meeting')}</div>`}<p class="ew-small ew-muted">Messages and meetings do not approve the event. Agreement to the current version remains a separate action.</p></section>`;
+  }
+  function map(readOnly=false) {
+    const booth = state.booth;
+    const power = [23,24,30,31].includes(booth);
+    const pairs = [[21,22],[22,23],[23,24],[24,25],[25,26],[27,28],[28,29],[29,30],[30,31],[31,32]].filter(p=>p.includes(booth)).map(p=>p.join(' + ')).join(' or ');
+    const row = start => Array.from({length:6},(_,i)=>`<button type="button" class="cursor-interaction" data-booth="${start+i}" aria-label="Inspect booth ${start+i}" aria-pressed="${booth===start+i}">${start+i}</button>`).join('');
+    const layout = state.mapView==='map'?`<div class="ew-map" aria-label="Sample layout: two rows of six booths, separated by a walkway"><div class="ew-small ew-muted">ROW A</div><div class="ew-booths">${row(21)}</div><div class="ew-walkway">CLEAR WALKWAY</div><div class="ew-booths">${row(27)}</div><div class="ew-small ew-muted" style="margin-top:6px">ROW B</div></div>`:`<ul class="ew-list">${Array.from({length:12},(_,i)=>{const n=21+i;return `<li><button type="button" class="ew-quiet cursor-interaction" data-booth="${n}">Booth ${n}</button><span>${n<27?'Row A':'Row B'} · ${[23,24,30,31].includes(n)?'Power':'No power'} · ${money(2000)}</span></li>`;}).join('')}</ul>`;
+    return `<div class="ew-row ew-spread"><h2>Booth layout</h2><div class="ew-row" aria-label="Layout view"><button type="button" class="cursor-interaction" data-map="map" aria-pressed="${state.mapView==='map'}">Map</button><button type="button" class="cursor-interaction" data-map="list" aria-pressed="${state.mapView==='list'}">List</button></div></div>${layout}<div class="ew-detail" aria-live="polite"><strong>Booth ${booth}</strong> · ${booth<27?'Row A':'Row B'} · ${money(2000)} / full event<p class="ew-small">Sample 2 × 2 m · ${power?'Power available':'No power connection'}${power&&state.version>=2?' · 500 W maximum':''}</p><p class="ew-small">Eligible adjacent pairs: ${pairs}</p><p class="ew-small ew-muted">${readOnly?'Selecting a booth here only shows details. An application does not reserve it.':'12 sample booths · 10 pairs · 26 + 27 are across the walkway.'}</p></div>`;
+  }
+  function policies() {
+    return `<h2>Cancellation and refund terms</h2><div class="ew-small ew-muted">Illustrative wording for review · not adopted event policy</div><details><summary>Merchant withdrawal</summary><p>Example: withdrawals received by 10 November, 18:00 receive a full refund of booth fees paid. Later withdrawals receive no refund.</p></details><details><summary>Organizer cancellation or date change</summary><p>Example: organizer cancellation receives a full refund. For a changed date or venue, merchants may accept the change or withdraw for a full refund before the response deadline stated in that notice.</p></details><details><summary>Remaining balance overdue</summary><p>Example: the organizer contacts the merchant and allows 24 hours to resolve an overdue balance. If unpaid, the organizer may cancel the booking under the accepted terms; the initial payment is not refunded.</p></details>`;
+  }
+  function stepContent() {
+    if(state.step===0) return heading('Step 1 of 5','Start with the event','One event edition, including setup and cleanup.')+`<div class="ew-grid">${field('Event name','Sample Davao Makers Market',true)}${field('Organizer','Sample Market Team')}${field('Contact','events@example.com')}${field('Event starts · Philippine time','14 Nov 2026, 10:00')}${field('Event ends · Philippine time','15 Nov 2026, 20:00')}${field('Merchant setup starts','13 Nov 2026, 14:00')}${field('Cleanup ends','15 Nov 2026, 22:00')}${field('About this event','A weekend market for local crafts, food and independent brands at Sample Hall.',true,true)}</div><p class="ew-small ew-muted" style="margin-top:16px">Cover image optional · Sample field values are fixed in this wireframe.</p>`;
+    if(state.step===1) return heading('Step 2 of 5','Agree on the venue and map','Prepare the required information, then resolve questions together.')+`<ul class="ew-list"><li><strong>Sample Hall · Davao City</strong><span>Privately arranged venue</span></li><li><span>Agreed access</span><span>13 Nov, 14:00 – 15 Nov, 22:00</span></li><li><span>Venue rental · organizer pays venue</span><span>${money(20000)} total · ${money(10000)} remaining</span></li></ul><div class="ew-notice"><div class="ew-row ew-spread"><strong>${status()}</strong><span class="ew-status">Version ${state.version}</span></div><p class="ew-small">${state.review==='changes'?'Venue note: confirm the power limit for booths 23 and 24 before we agree.':state.review==='agreed'?'This version is agreed. Changes to dates, layout or venue rules require renewed review.':'Continue the other steps while the venue reviews this version.'}</p>${state.review==='changes'?button('Record revised power rules','revise'):button('View venue review','venue')}</div>${packet(false)}${coordination()}${map()}<h2>Operating rules</h2><p>Keep the central walkway clear. No open flames. Setup and cleanup must stay within the access period.${state.version>=2?' Power-enabled booths: 500 W maximum per booth.':''}</p>`;
+    if(state.step===2) return heading('Step 3 of 5','Open applications with clear expectations','Merchants submit one application with preferred booths and backups.')+`<div class="ew-grid">${field('Applications open','20 Oct 2026, 09:00')}${field('Applications close','5 Nov 2026, 18:00')}${field('Expected initial decisions','6 Nov 2026, 18:00',true)}${field('Who can apply','Local crafts, packaged food, apparel and independent brands. Describe products, equipment and power needs.',true,true)}</div><h2>Standard merchant application</h2><p>Business and contact details · products and photos · operational needs · one booth or two adjacent booths.</p><div class="ew-notice"><strong>Organizer makes the final selection.</strong><p class="ew-small">Initial offers begin after applications close. Applying does not reserve a booth or require payment.</p></div><p class="ew-small ew-muted">Proposed: up to three ranked choices within one application. A backup preserves the application if a preferred booth is taken.</p>`;
+    if(state.step===3) return heading('Step 4 of 5','Set payment terms before merchants apply','Accepted merchants pay Sample Market Team directly.')+`<div class="ew-grid"><label class="ew-choice"><input type="radio" name="ew-payment" value="deposit" ${state.payment==='deposit'?'checked':''} ${state.published?'disabled':''}><span>Deposit, then balance</span></label><label class="ew-choice"><input type="radio" name="ew-payment" value="full" ${state.payment==='full'?'checked':''} ${state.published?'disabled':''}><span>Full payment upfront</span></label></div>${state.payment==='deposit'?`<div class="ew-grid">${field('Deposit · illustrative value','50% of offered booth total')}${field('Remaining balance due','11 Nov 2026, 18:00')}</div>`:''}<div class="ew-notice"><strong>Example offer: booths 30 + 31</strong><ul class="ew-list"><li><span>Total</span><strong>${money(4000)}</strong></li><li><span>Due within 48 hours of offer</span><strong>${money(state.payment==='deposit'?2000:4000)}</strong></li><li><span>Remaining balance</span><span>${state.payment==='deposit'?money(2000)+' by 11 Nov':money(0)}</span></li></ul><p class="ew-small">Payment proof starts organizer verification. Confirmation follows verification of the required initial payment.</p></div><div class="ew-grid">${field('Payment instructions · sample only','Pay the organizer using the instructions in the accepted offer, then submit a payment reference. No real account is configured.',true,true)}</div>${policies()}<p class="ew-small ew-muted">These example amounts and policy terms are for discussion. ${state.published?'This sample is published; restart the example to explore another payment mode.':'Accepted bookings keep the terms they accepted.'}</p>`;
+    return heading('Step 5 of 5',state.published?'Sample event published':'Review before publishing',state.published?'The example page is visible. Applications have not opened yet.':'Check the venue agreement and the information merchants will receive.')+`<ul class="ew-list"><li><span>Event details and contact</span><span>Complete</span></li><li><span>Venue agreement · version ${state.version}</span><span class="${state.review!=='agreed'?'ew-alert':''}">${status()}</span></li><li><span>Booths and eligible pairs</span><span>12 booths · 10 pairs</span></li><li><span>Applications and decisions</span><span>Dates in sequence</span></li><li><span>Merchant payment mode</span><span>${state.payment==='deposit'?'50% sample deposit':'Full payment'}</span></li><li><span>Cancellation and refund terms</span><span>Illustrative copy supplied</span></li></ul><div class="ew-notice"><strong>${state.published?'Applications open 20 October, 09:00':state.review==='agreed'?'Sample is ready for a publication walkthrough':'Venue agreement is needed before publication'}</strong><p class="ew-small">${state.published?'No booths are reserved and no offers or payments have been created.':state.review==='agreed'?'Preview the merchant page, then simulate publication. The sample date is 19 October 2026.':'All other setup steps remain available. Review the current map and rules with the venue.'}</p>${state.review!=='agreed'?button('Go to venue review','venue'):''}</div>${button('Preview as a merchant','merchant')}`;
+  }
+  function merchant() {
+    return heading(state.published?'Public event · sample':'Merchant preview · draft','Sample Davao Makers Market','Sample Hall, Davao City · 14–15 November 2026')+`<div class="ew-notice"><strong>Applications open 20 October at 09:00</strong><p class="ew-small">Closes 5 November, 18:00 · Initial decisions expected 6 November, 18:00 · Philippine time</p></div><div class="ew-two-col"><section><p>A weekend market for local crafts, food and independent brands.</p>${map(true)}</section><aside class="ew-preview-aside"><h2>Before you apply</h2><ul class="ew-list"><li><span>One booth</span><strong>${money(2000)}</strong></li><li><span>Two adjacent booths</span><strong>${money(4000)}</strong></li><li><span>Initial payment</span><span>${state.payment==='deposit'?'50% sample deposit':'Full offered amount'}</span></li>${state.payment==='deposit'?'<li><span>Remaining balance</span><span>11 Nov, 18:00</span></li>':''}</ul><p>Apply once with your preferred booth or adjacent pair and backups. The organizer makes the final choice after the deadline.</p><p>No payment when applying. If selected, review the exact offer and pay the organizer within 48 hours. An organizer may grant an extension.</p><p class="ew-small">Contact: events@example.com</p>${button('Applications open 20 Oct','apply',true,true)}</aside></div>${policies()}<div class="ew-actions"><span class="ew-small ew-muted">Full event edition · all amounts illustrative</span>${button('Back to organizer preview','preview')}</div>`;
+  }
+  function venue() {
+    return heading('Venue view · Sample Hall','Review the event arrangement','Sample Market Team · 14–15 November 2026')+`<div class="ew-row ew-spread"><span class="ew-status">${status()} · v${state.version}</span><span class="ew-small ew-muted">Merchant decisions remain with the organizer</span></div><ul class="ew-list"><li><span>Access, setup through cleanup</span><span>13 Nov, 14:00 – 15 Nov, 22:00</span></li><li><span>Venue rental · organizer pays venue</span><span>${money(20000)} · ${money(10000)} remaining</span></li></ul>${packet(true)}${coordination()}${map()}<h2>Venue operating rules</h2><p>Keep the central walkway clear. No open flames. Access covers setup and cleanup.${state.version>=2?' Power-enabled booths: 500 W maximum per booth.':''}</p>${state.review==='changes'?'<div class="ew-notice"><strong>Change requested</strong><p>Confirm the power limit for booths 23 and 24 before we agree.</p></div>':''}<div class="ew-actions">${state.review==='agreed'?'<span>Agreement recorded for this version.</span>':button('Request power clarification','changes',false,state.published||state.review==='changes')}${state.review==='agreed'?button('Return to organizer','organizer',true):button('Agree to this arrangement','agree',true,state.review==='changes'||!state.packetReviewed)}</div><p class="ew-small ew-muted">${state.review==='pending'&&!state.packetReviewed?'Review the required information and confirm your review before agreeing. ':''}This view covers venue use and layout only. Merchant selection belongs to the organizer.</p>`;
+  }
+  function render() {
+    role.value=state.view;
+    root.classList.toggle('ew-top-nav',design.navigation==='Top steps');
+    const header=`<header class="ew-header"><div><div class="ew-brand">EVENT WORKSPACE</div><div class="ew-small ew-muted">${state.view==='venue'?'Sample Hall':'Sample Market Team'}</div></div><div class="ew-row"><span class="ew-status">${state.published?'Published example':'Sample draft'}</span>${state.view==='organizer'&&!state.exited?button('Save and exit','exit'):''}</div></header>`;
+    if(state.view==='merchant') app.innerHTML=header+`<main class="ew-main">${merchant()}</main>`;
+    else if(state.view==='venue') app.innerHTML=header+`<main class="ew-main">${venue()}</main>`;
+    else if(state.exited) app.innerHTML=header+`<main class="ew-main">${heading('Organizer events','Your sample draft')}<ul class="ew-list"><li><div><strong>Sample Davao Makers Market</strong><br><span class="ew-small ew-muted">14–15 Nov 2026 · ${status()}</span></div>${button('Resume setup','resume',true)}</li></ul><p class="ew-small ew-muted">Your choices are retained within this wireframe.</p></main>`;
+    else app.innerHTML=header+`<div class="ew-layout"><nav class="ew-steps" aria-label="Event setup steps">${steps.map((s,i)=>`<button type="button" class="cursor-interaction" data-step="${i}" ${state.step===i?'aria-current="step"':''}><span class="ew-number">${i+1}</span>${s}</button>`).join('')}</nav><main class="ew-main">${stepContent()}<div class="ew-actions">${state.step>0?button('Back','back'):'<span class="ew-small ew-muted">Sample fields · Philippine time</span>'}${state.step<4?button('Continue','next',true):state.published?button('View sample event','merchant',true):button('Simulate publication','publish',true,state.review!=='agreed')}</div></main></div>`;
+  }
+  function update(message='') { render(); live.textContent=message; save(); }
+  root.addEventListener('click',event=>{
+    const b=event.target.closest('button');
+    if(!b||!root.contains(b)||b.disabled) return;
+    if(b.dataset.step!==undefined){state.step=Number(b.dataset.step);state.exited=false;update();return;}
+    if(b.dataset.booth){state.booth=Number(b.dataset.booth);update();return;}
+    if(b.dataset.map){state.mapView=b.dataset.map;update();return;}
+    const a=b.dataset.action;
+    let message='';
+    if(a==='next') state.step=Math.min(4,state.step+1);
+    if(a==='back') state.step=Math.max(0,state.step-1);
+    if(a==='venue'||a==='merchant'){state.view=a;state.exited=false;}
+    if(a==='organizer'){state.view='organizer';state.step=1;state.exited=false;}
+    if(a==='preview'){state.view='organizer';state.step=4;state.exited=false;}
+    if(a==='agree'&&state.view==='venue'&&state.review==='pending'&&state.packetReviewed){state.review='agreed';message='Sample venue agreement recorded. Return to the organizer to continue.';}
+    if(a==='changes'&&state.view==='venue'&&!state.published){state.review='changes';state.packetReviewed=false;message='Sample change requested. The organizer can continue drafting, but publication stays blocked.';}
+    if(a==='revise'&&state.view==='organizer'&&state.review==='changes'){state.version=Math.min(100,state.version+1);state.review='pending';state.packetReviewed=false;message='The revised sample adds a 500 W power limit. The venue must review this version.';}
+    if(a==='coordination')state.coordinationOpen=!state.coordinationOpen;
+    if(a==='message'&&['organizer','venue'].includes(state.view)){state.thread=[...state.thread,{by:state.view,version:state.version}].slice(-8);message='Sample message added to this event conversation. Venue agreement is unchanged.';}
+    if(a==='propose'&&['organizer','venue'].includes(state.view)){state.meeting={status:'proposed',by:state.view,slot:0,mode:state.meetingMode};message='A fictional time is proposed, awaiting the other party. Nothing was added to a calendar.';}
+    const canReply=state.meeting?.status==='proposed'&&state.meeting.by!==state.view&&['organizer','venue'].includes(state.view);
+    if(a==='accept-meeting'&&canReply){state.meeting={...state.meeting,status:'confirmed'};message='Sample meeting time confirmed. The event arrangement is not approved by this action.';}
+    if(a==='reschedule'&&canReply){state.meeting={...state.meeting,by:state.view,slot:state.meeting.slot===0?1:0};message='An alternative sample time is proposed and needs the other party to accept.';}
+    if(a==='decline-meeting'&&canReply){state.meeting={...state.meeting,status:'declined'};message='Sample meeting declined. The event and its review remain active.';}
+    if(a==='cancel-meeting'&&state.meeting&&['proposed','confirmed'].includes(state.meeting.status)&&['organizer','venue'].includes(state.view)){state.meeting={...state.meeting,status:'cancelled'};message='Sample meeting cancelled. The event and its agreement state are unchanged.';}
+    if(a==='publish'&&state.review==='agreed'&&state.packetReviewed){state.published=true;message='Publication simulated. Applications open 20 October; no booths are reserved.';}
+    if(a==='exit'){state.exited=true;message='Sample choices retained in this wireframe.';}
+    if(a==='resume')state.exited=false;
+    if(a==='restart'){state={...defaults};message='Returned to the original fictional example.';}
+    update(message);
+  });
+  root.addEventListener('change',event=>{
+    if(event.target===role){state.view=role.value;state.exited=false;update();}
+    if(event.target.name==='ew-payment'&&!state.published){state.payment=event.target.value;update('The sample quote and merchant preview now use this payment mode.');}
+    if(event.target.name==='ew-packet-reviewed'&&state.view==='venue'&&state.review==='pending'){state.packetReviewed=event.target.checked;update('Review confirmation updated for the current sample version.');}
+    if(event.target.id==='ew-meeting-mode'){state.meetingMode=event.target.value==='inperson'?'inperson':'online';save();}
+  });
+  window.addEventListener('openai:set_globals',event=>{
+    if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);render();}
+  });
+  render();
+  if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:()=>{render();save();}});tweak.addSelect(design,'navigation',{label:'Step navigation',options:['Side steps','Top steps']});}
+})();
+</script>

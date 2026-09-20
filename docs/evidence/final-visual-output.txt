@@ -1,0 +1,507 @@
+{
+  "at": "2026-09-20T10:14:29.927Z",
+  "browser": "153.0.8010.12",
+  "results": [
+    {
+      "screen": "discovery",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "discovery",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "discovery",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "discovery",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "discovery",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "discovery",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booking",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booking",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booking",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booking",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booking",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booking",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-workspace",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-workspace",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-workspace",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-workspace",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-workspace",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-workspace",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "setup",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "setup",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "setup",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "setup",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "setup",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "setup",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-review",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-review",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-review",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-review",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-review",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "venue-review",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "public-event",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "public-event",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "public-event",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "public-event",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "public-event",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "public-event",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booths",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booths",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booths",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booths",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booths",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "booths",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "review",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "review",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "review",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "review",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "review",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "proof",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "proof",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "proof",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "proof",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "proof",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "proof",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "cancellation",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "cancellation",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "cancellation",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "cancellation",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "cancellation",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "cancellation",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "roster",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "roster",
+      "width": 360,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "roster",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "roster",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "roster",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "roster",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "screen": "enlarged-list-200-percent",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "screen": "reduced-motion",
+      "transition": "0s"
+    },
+    {
+      "screen": "image-fallback",
+      "visible": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "performance": [
+    {
+      "profile": "desktop-local",
+      "run": 1,
+      "lcp": 104,
+      "cls": 0,
+      "resources": 33,
+      "transferred": 385889
+    },
+    {
+      "profile": "desktop-local",
+      "run": 2,
+      "lcp": 108,
+      "cls": 0,
+      "resources": 33,
+      "transferred": 385890
+    },
+    {
+      "profile": "desktop-local",
+      "run": 3,
+      "lcp": 104,
+      "cls": 0,
+      "resources": 33,
+      "transferred": 385888
+    },
+    {
+      "profile": "mobile-constrained",
+      "run": 1,
+      "lcp": 1888,
+      "cls": 0.00011129670413745976,
+      "resources": 29,
+      "transferred": 382946
+    },
+    {
+      "profile": "mobile-constrained",
+      "run": 2,
+      "lcp": 1892,
+      "cls": 0.00011129670413745976,
+      "resources": 29,
+      "transferred": 382942
+    },
+    {
+      "profile": "mobile-constrained",
+      "run": 3,
+      "lcp": 1892,
+      "cls": 0.00011129670413745976,
+      "resources": 29,
+      "transferred": 382946
+    }
+  ],
+  "firefoxSmoke": {
+    "passed": true,
+    "version": "155.0"
+  }
+}

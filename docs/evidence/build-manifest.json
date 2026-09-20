@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-09-20T10:16:47.913167+00:00",
+  "sourceFingerprintSHA256": "1aaf86b0a27b89ecb7684096b7577ac9ef6b0b0c52e3b2a42ea8a48c9e0fccc3",
+  "sourceFiles": 68,
+  "nextBuildId": "b0qxXWE4ai99lhAz7rFpx",
+  "lockSHA256": "6a91717555301f2b628c5517537b43fe983f8b3a92d0a9fa40df77611c044215",
+  "node": "22.23.2",
+  "npm": "11.3.0",
+  "gitRepository": false,
+  "requirementsPreserved": 48,
+  "verifiedLocally": 48,
+  "userAccepted": 0,
+  "supabaseConnected": false,
+  "vercelDeployed": false
+}

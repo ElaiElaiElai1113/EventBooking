@@ -1,0 +1,71 @@
+{
+  "results": [
+    {
+      "name": "venues",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "venues",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "venues",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "venues",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "booths",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "booths",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "booths",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "booths",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "review",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "review",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "review",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "review",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "selection": "23 + 24"
+    },
+    {
+      "listSelected": "true"
+    }
+  ],
+  "errors": []
+}

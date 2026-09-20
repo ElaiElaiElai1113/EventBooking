@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-20T10:14:31.949Z",
+  "checks": [
+    "Filters, empty state, requested date and inquiry draft/step survive refresh",
+    "Open inquiry form axe scan: zero violations",
+    "Meeting counter/recipient acceptance/cancel/decline preserve unagreed arrangement"
+  ],
+  "errors": []
+}
