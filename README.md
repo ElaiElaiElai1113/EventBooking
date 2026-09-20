@@ -2,11 +2,11 @@
 
 A fictional, browser-local event demo with three connected journeys: venue inquiry → venue-verified booking; organizer setup → venue agreement → publication; merchant application → exact booth offer → organizer-verified confirmation.
 
-**Supabase not connected. Vercel not deployed. No real accounts, money, messages, calendar invitations, uploads or customer data.** Presenter roles simulate perspectives; they are not authentication or security. Source repository: [EventBooking on GitHub](https://github.com/ElaiElaiElai1113/EventBooking).
+**Live demo: [eventbooking-pi.vercel.app](https://eventbooking-pi.vercel.app).** Hosted on Vercel; Supabase is not connected. No real accounts, money, messages, calendar invitations, uploads or customer data. Presenter roles simulate perspectives; they are not authentication or security. Source repository: [EventBooking on GitHub](https://github.com/ElaiElaiElai1113/EventBooking).
 
 ## Run locally
 
-Use Node 22.22+ (verified with **Node 22.23.2**, npm 11.3.0) and the included `package-lock.json`.
+Use Node 22.22+ within Node 22.x (verified locally with **Node 22.23.2**, npm 11.3.0) and the included `package-lock.json`. Vercel uses Node 22.x.
 
 ```powershell
 cd C:\Users\Admin\Desktop\Projects\Portfolio\EventBooking
@@ -67,6 +67,14 @@ npm run test:e2e
 
 Playwright starts the production build on `127.0.0.1:3100`, with desktop and Pixel 5 Chromium projects. Keep that port free for the final suite. `DEMO_DEV_CHECK=1` is an optional development-only reuse switch; do not set it for production acceptance. Tests reset their own browser-local scenes and do not access external services.
 
+To run browser checks against the hosted fictional demo without starting a local server:
+
+```powershell
+$env:DEMO_BASE_URL='https://eventbooking-pi.vercel.app'
+npm run test:e2e
+Remove-Item Env:DEMO_BASE_URL
+```
+
 For the extended visual/performance checks, start the built server in one terminal:
 
 ```powershell
@@ -78,6 +86,7 @@ Then run `node scripts/final-visual-check.mjs` in another terminal. It writes sc
 ## Evidence and architecture
 
 - [Implementation evidence and all R01–R48 mappings](docs/implementation-evidence.md)
+- [Vercel deployment and hosted verification](docs/vercel-deployment.md)
 - [Master requirements](PROJECT_MASTER.md) — original requirement text retained
 - [Connected-demo readiness](docs/connected-demo-readiness.md) — future Supabase security/transactions and Vercel preview gates
 - [Asset register](docs/asset-register.md)

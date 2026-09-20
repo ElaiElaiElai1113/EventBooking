@@ -1,0 +1,139 @@
+
+> eventbooking@1.0.0 test:e2e
+> playwright test
+
+
+Running 56 tests using 1 worker
+
+(node:38216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues (29.3s)
+  ok  2 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues/sample-hall (2.1s)
+  ok  3 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/setup (16.3s)
+  ok  4 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026 (8.0s)
+  x   5 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply (30.1s)
+(node:13540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /applications/paper-and-clay (2.3s)
+  ok  7 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/applications (8.1s)
+  x   8 [chromium] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input (30.1s)
+(node:36788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [chromium] › tests\e2e\cancellation.spec.ts:3:1 › cancellation releases pair; explicit refund remains separate (2.3s)
+  ok 10 [chromium] › tests\e2e\merchant.spec.ts:3:1 › one application survives competition through pair confirmation and roster (7.3s)
+  ok 11 [chromium] › tests\e2e\merchant.spec.ts:110:1 › map/list selection, draft recovery and profile snapshot (4.5s)
+  ok 12 [chromium] › tests\e2e\merchant.spec.ts:166:1 › business edits survive jumping directly to review (13.3s)
+  ok 13 [chromium] › tests\e2e\organizer.spec.ts:3:1 › current packet review gates agreement and complete publication (2.8s)
+  ok 14 [chromium] › tests\e2e\organizer.spec.ts:45:1 › required revision blocks agreement; optional meeting never approves (6.6s)
+  ok 15 [chromium] › tests\e2e\organizer.spec.ts:76:1 › review filters show matching submissions and clarification permits a deliberate same-record correction (4.3s)
+  ok 16 [chromium] › tests\e2e\presenter.spec.ts:3:1 › private records stay out of the wrong simulated perspective (21.5s)
+  ok 17 [chromium] › tests\e2e\presenter.spec.ts:40:1 › corrupt saved data is preserved until explicit recovery (1.0s)
+  ok 18 [chromium] › tests\e2e\presenter.spec.ts:62:1 › save failure is honest and retains in-memory changes (2.0s)
+  ok 19 [chromium] › tests\e2e\presenter.spec.ts:80:1 › waitlist keeps application and single substitute requires acceptance (1.8s)
+  ok 20 [chromium] › tests\e2e\presenter.spec.ts:108:1 › scene loading refreshes the displayed clock and continue returns to the latest route (2.7s)
+  ok 21 [chromium] › tests\e2e\timing.spec.ts:3:1 › timely proof protects both booths after expiry (11.3s)
+  ok 22 [chromium] › tests\e2e\timing.spec.ts:14:1 › unpaid offer expires atomically without deleting application (1.4s)
+  ok 23 [chromium] › tests\e2e\timing.spec.ts:27:1 › explicit extension is visible to merchant (2.3s)
+  ok 24 [chromium] › tests\e2e\timing.spec.ts:45:1 › full mode partial receipt cannot confirm; sufficient total can (3.0s)
+  ok 25 [chromium] › tests\e2e\timing.spec.ts:91:1 › late proof cannot reclaim a booth reallocated to another merchant (3.1s)
+  ok 26 [chromium] › tests\e2e\venue.spec.ts:4:1 › unaccepted quote revisions retain earlier dates and require exact acceptance (2.4s)
+  ok 27 [chromium] › tests\e2e\venue.spec.ts:43:1 › inquiry to venue-verified confirmation uses the same booking (4.5s)
+  ok 28 [chromium] › tests\e2e\venue.spec.ts:102:1 › overlapping inquiry cannot obtain a second hold (8.3s)
+(node:26840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 29 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues (1.8s)
+  ok 30 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues/sample-hall (11.5s)
+  ok 31 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/setup (12.0s)
+  ok 32 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026 (25.8s)
+  ok 33 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply (14.0s)
+  ok 34 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /applications/paper-and-clay (1.9s)
+  ok 35 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/applications (1.9s)
+  ok 36 [mobile-chromium] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input (6.5s)
+  ok 37 [mobile-chromium] › tests\e2e\cancellation.spec.ts:3:1 › cancellation releases pair; explicit refund remains separate (2.3s)
+  ok 38 [mobile-chromium] › tests\e2e\merchant.spec.ts:3:1 › one application survives competition through pair confirmation and roster (6.9s)
+  ok 39 [mobile-chromium] › tests\e2e\merchant.spec.ts:110:1 › map/list selection, draft recovery and profile snapshot (4.4s)
+  ok 40 [mobile-chromium] › tests\e2e\merchant.spec.ts:166:1 › business edits survive jumping directly to review (8.9s)
+  ok 41 [mobile-chromium] › tests\e2e\organizer.spec.ts:3:1 › current packet review gates agreement and complete publication (2.3s)
+  ok 42 [mobile-chromium] › tests\e2e\organizer.spec.ts:45:1 › required revision blocks agreement; optional meeting never approves (1.9s)
+  ok 43 [mobile-chromium] › tests\e2e\organizer.spec.ts:76:1 › review filters show matching submissions and clarification permits a deliberate same-record correction (14.0s)
+  ok 44 [mobile-chromium] › tests\e2e\presenter.spec.ts:3:1 › private records stay out of the wrong simulated perspective (3.5s)
+  ok 45 [mobile-chromium] › tests\e2e\presenter.spec.ts:40:1 › corrupt saved data is preserved until explicit recovery (851ms)
+  ok 46 [mobile-chromium] › tests\e2e\presenter.spec.ts:62:1 › save failure is honest and retains in-memory changes (1.7s)
+  ok 47 [mobile-chromium] › tests\e2e\presenter.spec.ts:80:1 › waitlist keeps application and single substitute requires acceptance (6.4s)
+  ok 48 [mobile-chromium] › tests\e2e\presenter.spec.ts:108:1 › scene loading refreshes the displayed clock and continue returns to the latest route (10.7s)
+  ok 49 [mobile-chromium] › tests\e2e\timing.spec.ts:3:1 › timely proof protects both booths after expiry (1.5s)
+  ok 50 [mobile-chromium] › tests\e2e\timing.spec.ts:14:1 › unpaid offer expires atomically without deleting application (6.3s)
+  ok 51 [mobile-chromium] › tests\e2e\timing.spec.ts:27:1 › explicit extension is visible to merchant (2.3s)
+  ok 52 [mobile-chromium] › tests\e2e\timing.spec.ts:45:1 › full mode partial receipt cannot confirm; sufficient total can (12.2s)
+  ok 53 [mobile-chromium] › tests\e2e\timing.spec.ts:91:1 › late proof cannot reclaim a booth reallocated to another merchant (18.2s)
+  ok 54 [mobile-chromium] › tests\e2e\venue.spec.ts:4:1 › unaccepted quote revisions retain earlier dates and require exact acceptance (2.3s)
+  ok 55 [mobile-chromium] › tests\e2e\venue.spec.ts:43:1 › inquiry to venue-verified confirmation uses the same booking (4.0s)
+  ok 56 [mobile-chromium] › tests\e2e\venue.spec.ts:102:1 › overlapping inquiry cannot obtain a second hold (1.0s)
+
+
+  1) [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "https://eventbooking-pi.vercel.app/", waiting until "load"
+
+
+       at helpers.ts:13
+
+      11 | }
+      12 | export async function loadScene(page: Page, scene: string, value: string) {
+    > 13 |   await page.goto("/");
+         |              ^
+      14 |   page.on("dialog", (dialog) => dialog.accept());
+      15 |   await page
+      16 |     .getByRole("button", { name: "Demo controls", exact: true })
+        at loadScene (C:\Users\Admin\Desktop\Projects\Portfolio\EventBooking\tests\e2e\helpers.ts:13:14)
+        at C:\Users\Admin\Desktop\Projects\Portfolio\EventBooking\tests\e2e\accessibility.spec.ts:19:11
+
+    Error Context: test-results\accessibility-accessibility-events-makers-market-2026-apply-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\accessibility-accessibility-events-makers-market-2026-apply-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\accessibility-accessibility-events-makers-market-2026-apply-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForURL: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/events/makers-market-2026" until "load"
+    ============================================================
+
+       at helpers.ts:20
+
+      18 |   await page.getByLabel("Demo scene", { exact: true }).selectOption(scene);
+      19 |   await page.getByRole("button", { name: "Load scene", exact: true }).click();
+    > 20 |   await page.waitForURL("**" + scenes.find((s) => s[0] === scene)![3]);
+         |              ^
+      21 |   await page.getByLabel("Demo role", { exact: true }).selectOption(value);
+      22 |   await page
+      23 |     .getByRole("button", { name: "Close demo controls", exact: true })
+        at loadScene (C:\Users\Admin\Desktop\Projects\Portfolio\EventBooking\tests\e2e\helpers.ts:20:14)
+        at C:\Users\Admin\Desktop\Projects\Portfolio\EventBooking\tests\e2e\accessibility.spec.ts:37:3
+
+    Error Context: test-results\accessibility-keyboard-dia-fd50c-s-and-errors-preserve-input-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\accessibility-keyboard-dia-fd50c-s-and-errors-preserve-input-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\accessibility-keyboard-dia-fd50c-s-and-errors-preserve-input-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply 
+    [chromium] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input 
+  54 passed (7.1m)

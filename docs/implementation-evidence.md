@@ -1,6 +1,6 @@
 # Local implementation evidence
 
-20 September 2026. Stage A, fictional local demo. **Not connected to Supabase, not deployed to Vercel, not independently user accepted.** **R01–R48: 48 Verified locally, 0 unresolved local acceptance rows.** T01–T14 local work is complete within the fixed-scene scope and limits below. No row is marked User accepted.
+20 September 2026. Stage A, fictional local demo. **Not connected to Supabase, not independently user accepted.** Subsequently deployed to Vercel at the user's request; see the separate [hosted verification](vercel-deployment.md). The measurements below retain their original local scope. **R01–R48: 48 Verified locally, 0 unresolved local acceptance rows.** T01–T14 local work is complete within the fixed-scene scope and limits below. No row is marked User accepted.
 
 ## Delivered behavior
 
@@ -159,6 +159,6 @@ The master requirement text is unchanged. Each row below identifies implemented 
 - After acceptance, proposed changes are recorded in the participant conversation for explicit discussion; the local demo does not silently execute a financial contract amendment or migrate receipts. Unaccepted quote/offer replacement is a distinct guarded version operation. Real amendment policy remains a later operating decision.
 - Proof, verification, cancellation and refund are explicit simulations. No actual money moved or provider receipt authenticity was established. Packet previews are supplied sample text, not real file uploads. Exact venue-document requirements remain deferred.
 - Firefox has a smoke check; full Firefox/WebKit/Safari, physical devices, full screen-reader testing, independent user testing and production field metrics are not claimed.
-- Supabase and Vercel remain documentation-only. [T14 readiness](connected-demo-readiness.md) specifies authoritative server transactions, membership/RLS/privilege checks, concurrency tests and environment-specific deployment verification before connected/hosted claims.
+- Supabase remains documentation-only. Vercel hosting was subsequently authorized and is recorded separately in [hosted verification](vercel-deployment.md). [T14 readiness](connected-demo-readiness.md) still specifies the authoritative server transactions, membership/RLS/privilege checks and concurrency tests required before connected claims.
 
 No confirmed business rule or price was changed. Remaining live-pilot inputs are actual document examples, approved policies/payment instructions, real staff review commitments, identity/organization ownership, support, commercial validation and user acceptance.
