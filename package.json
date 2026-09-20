@@ -55,6 +55,6 @@
   },
   "private": true,
   "engines": {
-    "node": ">=22.22.0"
+    "node": ">=22.22.0 <23"
   }
 }
