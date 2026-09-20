@@ -92,6 +92,7 @@ Then run `node scripts/final-visual-check.mjs` in another terminal. It writes sc
 - [Implementation evidence and all R01–R48 mappings](docs/implementation-evidence.md)
 - [Vercel deployment and hosted verification](docs/vercel-deployment.md)
 - [Demo improvements and browser verification](docs/demo-improvements.md)
+- [Playful design and verification](docs/playful-design.md)
 - [Master requirements](PROJECT_MASTER.md) — original requirement text retained
 - [Connected-demo readiness](docs/connected-demo-readiness.md) — future Supabase security/transactions and Vercel preview gates
 - [Asset register](docs/asset-register.md)

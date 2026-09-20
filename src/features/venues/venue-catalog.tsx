@@ -20,8 +20,11 @@ export function VenueCatalog() {
       (!f.area || v.area === f.area) && v.capacity >= Number(f.guests || 0),
   );
   return (
-    <div className="container">
+    <div className="container venue-discovery">
       <div className="market-heading">
+        <span className="gathering-mark" aria-hidden="true">
+          ✳
+        </span>
         <PageHeading
           eyebrow="GOOD PLACES. GREAT GATHERINGS."
           title="A place for your next occasion."

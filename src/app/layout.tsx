@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
+import "./playful.css";
 import { DemoProvider } from "@/demo/demo-provider";
 import { Shell } from "@/components/layout/shell";
 const sans = localFont({

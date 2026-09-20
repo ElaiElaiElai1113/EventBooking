@@ -20,14 +20,41 @@ export function VenueDetails({ id }: { id: string }) {
       </div>
     );
   return (
-    <div className="container">
+    <div className="container venue-detail-page">
       <Back href="/venues">All venues</Back>
       <PageHeading
         eyebrow={`${v.area.toUpperCase()} · DAVAO CITY`}
         title={v.name}
         description={v.description}
       />
-      <VenueGallery venue={v} />
+      <div className="venue-hero-grid">
+        <aside className="panel quote-card">
+          <p className="eyebrow">MAKE IT YOUR OCCASION</p>
+          <h2>
+            <small>From</small>{" "}
+            {money(v.price).replace("PHP", "₱").replace(/\.00$/, "")}
+          </h2>
+          <p>
+            Illustrative starting price for whole-venue use, not a per-person
+            rate. Your dates, access hours and requested services determine the
+            final quote.
+          </p>
+          <Notice>No payment or reservation when you inquire.</Notice>
+          <Button
+            onClick={() => {
+              nav("inquiry-" + id, "open");
+              requestAnimationFrame(() =>
+                document
+                  .getElementById("inquiry")
+                  ?.scrollIntoView({ block: "start" }),
+              );
+            }}
+          >
+            Request a quote
+          </Button>
+        </aside>
+        <VenueGallery venue={v} />
+      </div>
       <div className="detail-grid">
         <section>
           <h2>A setting with room for your plans</h2>
@@ -74,33 +101,8 @@ export function VenueDetails({ id }: { id: string }) {
               inclusions in its quote.
             </p>
           </details>
-          <VenueCalendar key={id} venueId={id} />
         </section>
-        <aside className="panel quote-card">
-          <p className="eyebrow">MAKE IT YOUR OCCASION</p>
-          <h2>
-            <small>From</small>{" "}
-            {money(v.price).replace("PHP", "₱").replace(/\.00$/, "")}
-          </h2>
-          <p>
-            Illustrative starting price for whole-venue use, not a per-person
-            rate. Your dates, access hours and requested services determine the
-            final quote.
-          </p>
-          <Notice>No payment or reservation when you inquire.</Notice>
-          <Button
-            onClick={() => {
-              nav("inquiry-" + id, "open");
-              requestAnimationFrame(() =>
-                document
-                  .getElementById("inquiry")
-                  ?.scrollIntoView({ block: "start" }),
-              );
-            }}
-          >
-            Request a quote
-          </Button>
-        </aside>
+        <VenueCalendar key={id} venueId={id} />
       </div>
       {inquiry && (
         <div style={{ marginTop: 32 }}>

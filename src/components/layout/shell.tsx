@@ -8,6 +8,9 @@ import { PresenterControls } from "@/demo/presenter-controls";
 export function Shell({ children }: { children: ReactNode }) {
   const { state, error, clearError, saved, nav } = useDemo();
   const path = usePathname();
+  const workspace =
+    /^\/(organizer|venue|bookings|applications)(\/|$)/.test(path) ||
+    path.endsWith("/apply");
   useEffect(() => {
     if (path !== "/" && state.navigation.route !== path) nav("route", path);
   }, [path, state.navigation.route, nav]);
@@ -33,7 +36,7 @@ export function Shell({ children }: { children: ReactNode }) {
           ? [[`/applications/${state.identity}`, "My application"]]
           : [["/bookings/alex-celebration", "My inquiry"]];
   return (
-    <>
+    <div className={`app-shell ${workspace ? "work-mode" : "discovery-mode"}`}>
       <a className="skip" href="#main">
         Skip to content
       </a>
@@ -88,6 +91,6 @@ export function Shell({ children }: { children: ReactNode }) {
         </span>
         <span role="status">{saved}</span>
       </footer>
-    </>
+    </div>
   );
 }

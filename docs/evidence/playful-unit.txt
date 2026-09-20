@@ -1,0 +1,13 @@
+
+> eventbooking@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.1 C:/Users/Admin/Desktop/Projects/Portfolio/EventBooking
+
+
+ Test Files  9 passed (9)
+      Tests  64 passed (64)
+   Start at  21:45:26
+   Duration  2.66s (environment 84%, import 6%, transform 5%, tests 5%)
+

@@ -1,0 +1,35 @@
+
+Running 24 tests using 1 worker
+
+(node:41600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues (795ms)
+  ok  2 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues/sample-hall (868ms)
+  ok  3 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/setup (760ms)
+  ok  4 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026 (768ms)
+  ok  5 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply (789ms)
+  ok  6 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /applications/paper-and-clay (724ms)
+  ok  7 [chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/applications (820ms)
+  ok  8 [chromium] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input (508ms)
+(node:48780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues (800ms)
+  ok 10 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues/sample-hall (861ms)
+  ok 11 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/setup (715ms)
+  ok 12 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026 (863ms)
+  ok 13 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply (815ms)
+  ok 14 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /applications/paper-and-clay (770ms)
+  ok 15 [mobile-chromium] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/applications (832ms)
+  ok 16 [mobile-chromium] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input (544ms)
+(node:42820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 17 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues (2.0s)
+  ok 18 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /venues/sample-hall (2.0s)
+  ok 19 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/setup (1.9s)
+  ok 20 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026 (2.0s)
+  ok 21 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /events/makers-market-2026/apply (2.0s)
+  ok 22 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /applications/paper-and-clay (2.0s)
+  ok 23 [iphone-webkit] › tests\e2e\accessibility.spec.ts:18:3 › accessibility /organizer/events/makers-market-2026/applications (1.9s)
+  ok 24 [iphone-webkit] › tests\e2e\accessibility.spec.ts:34:1 › keyboard dialog focus returns and errors preserve input (1.7s)
+
+  24 passed (29.5s)

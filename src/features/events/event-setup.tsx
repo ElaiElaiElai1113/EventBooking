@@ -4,12 +4,7 @@ import { useDemo } from "@/demo/demo-provider";
 import { JourneyProgress } from "@/components/shared/journey-progress";
 import { StepNavigation } from "@/components/shared/step-navigation";
 import { RecordForm, type Field } from "@/components/shared/record-form";
-import {
-  PageHeading,
-  RoleGate,
-  ActionLink,
-  Notice,
-} from "@/components/shared/common";
+import { PageHeading, RoleGate, Notice } from "@/components/shared/common";
 import { Button } from "@/components/ui/button";
 import { localInput, fromInput } from "@/domain/time";
 import { publicationIssues } from "@/domain/publication";
@@ -59,7 +54,9 @@ export function EventSetup() {
           title={e.name || "Prepare your event"}
           description={`Arrangement v${a.version} · ${e.status === "published" ? "Published" : "Draft"} · You can keep drafting while the venue reviews.`}
           action={
-            <ActionLink href="/organizer/events">Save and exit</ActionLink>
+            <Link className="button button-ghost" href="/organizer/events">
+              Save and exit
+            </Link>
           }
         />
         <JourneyProgress id={e.id} />

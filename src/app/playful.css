@@ -1,0 +1,730 @@
+/* Discovery is expressive; workspaces keep the same tokens with less decoration. */
+.app-shell {
+  --butter: #f3df91;
+  --apricot: #f2c5ad;
+  --soft-sage: #e4ebd7;
+}
+.app-shell .brand > svg {
+  background: var(--butter);
+  border-radius: 50%;
+  padding: 7px;
+  width: 44px;
+  height: 44px;
+}
+.app-shell .button-primary {
+  border-radius: 999px;
+  padding-inline: 22px;
+}
+.app-shell .button-outline {
+  border-radius: 999px;
+}
+.app-shell .site-header {
+  height: 88px;
+}
+.app-shell .site-header nav a {
+  border-radius: 999px;
+  padding: 9px 14px;
+}
+.app-shell .site-header nav a.active {
+  background: var(--soft-sage);
+  border: 0;
+}
+.discovery-mode {
+  background: #faf8f0;
+}
+.discovery-mode .site-header {
+  border-bottom-color: transparent;
+}
+.discovery-mode .container {
+  padding-top: 34px;
+}
+.discovery-mode .market-heading {
+  position: relative;
+  align-items: center;
+  padding: 20px 0 32px;
+}
+.discovery-mode .market-heading .page-heading {
+  position: relative;
+  z-index: 1;
+}
+.discovery-mode .market-heading h1 {
+  font-size: clamp(38px, 5.6vw, 76px);
+  max-width: 800px;
+  line-height: 1.04;
+}
+.discovery-mode .market-heading .lead {
+  max-width: 620px;
+  font-size: 17px;
+}
+.discovery-mode .eyebrow {
+  letter-spacing: 0.13em;
+  font-size: 11px;
+}
+.gathering-mark {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 180px;
+  line-height: 1;
+  color: #dfaa72;
+  transform: rotate(12deg);
+  user-select: none;
+  pointer-events: none;
+}
+.venue-discovery .gathering-mark {
+  right: 45px;
+  top: 15px;
+  color: #e8ce85;
+}
+.discovery-mode .editorial-note {
+  z-index: 1;
+  padding: 60px 16px 0;
+  color: #75412d;
+  font-size: 24px;
+}
+.discovery-mode .search-bar {
+  border: 0;
+  border-radius: 22px;
+  padding: 24px 28px;
+  background: #e9eddf;
+  box-shadow: none;
+}
+.discovery-mode .search-bar input,
+.discovery-mode .search-bar select {
+  background: transparent;
+}
+.discovery-mode .search-icon {
+  border-radius: 50%;
+  background: var(--color-ink);
+}
+.discovery-mode .section-label {
+  margin: 34px 0 24px;
+}
+.discovery-mode .section-label h2 {
+  font-size: 26px;
+}
+.discovery-mode .venue-grid {
+  gap: 24px;
+  align-items: start;
+}
+.discovery-mode .venue-card {
+  border: 0;
+  border-radius: 26px;
+  padding: 14px 14px 22px;
+  background: #e6edda;
+}
+.discovery-mode .venue-card:nth-child(2) {
+  background: #f7e8b2;
+  margin-top: 32px;
+}
+.discovery-mode .venue-card:nth-child(3) {
+  background: #f5d9ca;
+}
+.discovery-mode .venue-photo {
+  aspect-ratio: 1.1;
+  border-radius: 18px 18px 70px 18px;
+}
+.discovery-mode .venue-card:nth-child(2) .venue-photo {
+  border-radius: 80px 80px 18px 18px;
+}
+.discovery-mode .venue-card:nth-child(3) .venue-photo {
+  border-radius: 18px 70px 18px 18px;
+}
+.discovery-mode .venue-photo img {
+  transition: transform 0.3s ease;
+}
+.discovery-mode .venue-card h2 {
+  font-size: 32px;
+}
+.discovery-mode .venue-card > p,
+.discovery-mode .venue-meta,
+.discovery-mode .venue-bottom,
+.discovery-mode .venue-card h2 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.discovery-mode .venue-card > p {
+  color: #435044;
+}
+.discovery-mode .venue-bottom {
+  border-top-color: #23352b30;
+}
+.discovery-mode .venue-bottom > a {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #23352b60;
+  border-radius: 50%;
+}
+.discovery-mode .venue-bottom strong {
+  font-size: 20px;
+}
+.discovery-mode .photo-link {
+  background: var(--butter);
+}
+.discovery-mode .photo-caption {
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+.welcome-page .journey-grid {
+  gap: 24px;
+  align-items: stretch;
+}
+.welcome-page .journey-card {
+  border: 0;
+  border-radius: 26px;
+  background: #e6edda;
+  padding: 18px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.welcome-page .journey-card:nth-child(2) {
+  background: #f7e8b2;
+}
+.welcome-page .journey-card:nth-child(3) {
+  background: #f5d9ca;
+}
+.journey-art {
+  height: 205px;
+  position: relative;
+  width: calc(100% + 12px);
+  margin: -6px -6px 22px;
+  overflow: hidden;
+  border-radius: 18px 18px 70px 18px;
+  background: #f7f6f1;
+}
+.journey-art img {
+  object-fit: cover;
+}
+.journey-art.product-art {
+  background: #faeee5;
+  border-radius: 65px 18px 18px 18px;
+}
+.journey-art.product-art img {
+  object-fit: contain;
+  padding: 22px;
+}
+.welcome-page .journey-card > svg {
+  width: 23px;
+  height: 23px;
+  margin-bottom: 16px;
+}
+.welcome-page .journey-card h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 30px;
+}
+.welcome-page .journey-card > p {
+  color: #435044;
+  font-size: 15px;
+}
+.welcome-page .journey-card > .button {
+  margin-top: auto;
+}
+.discovery-mode .market-foot {
+  border-top-style: dashed;
+}
+.venue-detail-page > .page-heading {
+  margin-bottom: 26px;
+  max-width: 960px;
+}
+.venue-detail-page > .page-heading h1 {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 68px);
+  font-weight: 400;
+}
+.venue-detail-page > .page-heading .lead {
+  max-width: 680px;
+}
+.venue-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  grid-template-areas: "gallery quote";
+  align-items: start;
+  gap: 28px;
+  margin-bottom: 48px;
+}
+.venue-hero-grid .venue-gallery {
+  grid-area: gallery;
+  min-width: 0;
+  margin: 0;
+}
+.venue-hero-grid .gallery-stage {
+  height: 390px;
+  border-radius: 26px 26px 85px 26px;
+}
+.venue-hero-grid .quote-card {
+  grid-area: quote;
+  position: relative;
+  background: #f7e8b2;
+  border: 0;
+  border-radius: 24px;
+  padding: 26px;
+  margin: 0;
+}
+.venue-hero-grid .quote-card::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #faf8f0;
+  left: -12px;
+  top: 54%;
+}
+.venue-hero-grid .quote-card h2 {
+  font-size: 35px;
+  letter-spacing: -0.05em;
+}
+.venue-hero-grid .quote-card > p:not(.eyebrow) {
+  font-size: 14px;
+  color: #435044;
+}
+.venue-hero-grid .quote-card .notice {
+  background: transparent;
+  border: 0;
+  border-top: 1px dashed #23352b60;
+  padding: 16px 0;
+  font-size: 13px;
+}
+.venue-hero-grid .gallery-controls {
+  gap: 8px;
+}
+.venue-hero-grid .gallery-controls button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 10px 6px;
+  font-size: 13px;
+}
+.venue-hero-grid .gallery-controls [aria-pressed="true"] {
+  border-color: #a84c32;
+  background: transparent;
+}
+.venue-detail-page .detail-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 60px;
+}
+.venue-detail-page .detail-grid > section:first-child {
+  padding-top: 16px;
+}
+.venue-detail-page .detail-grid > .venue-calendar {
+  margin: 0;
+  padding: 26px;
+  background: #edf0e6;
+  border-radius: 26px;
+}
+.venue-detail-page .detail-grid h2 {
+  font-size: 26px;
+}
+.venue-detail-page .amenities {
+  gap: 10px;
+  margin: 24px 0;
+}
+.venue-detail-page .amenities > span {
+  background: #e6edda;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+.venue-detail-page .calendar-day {
+  border-color: transparent;
+  border-radius: 10px;
+}
+.venue-detail-page .selected-day {
+  background: transparent;
+  border-left-color: #a84c32;
+}
+.discovery-mode .event-banner {
+  position: relative;
+  background: #f4e2ad;
+  border-radius: 28px 28px 80px 28px;
+  padding: 38px;
+  border: 0;
+}
+.discovery-mode .event-banner h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 400;
+  max-width: 850px;
+}
+.discovery-mode .event-banner .status {
+  background: #fff7dc;
+}
+.work-mode {
+  background: #f4f5f0;
+}
+.work-mode .container {
+  padding-top: 26px;
+  padding-bottom: 36px;
+}
+.work-mode .site-header {
+  height: 74px;
+  background: #fafaf6;
+}
+.work-mode .page-heading {
+  margin-bottom: 22px;
+  align-items: center;
+}
+.work-mode .page-heading h1 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin-bottom: 8px;
+}
+.work-mode .page-heading .lead {
+  font-size: 14px;
+  max-width: 75ch;
+  margin: 0;
+}
+.work-mode .page-heading .eyebrow {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+.work-mode .panel {
+  border-color: #e0e4db;
+  border-radius: 14px;
+  box-shadow: none;
+  padding: 24px;
+}
+.work-mode .panel h2 {
+  font-size: 22px;
+}
+.work-mode .journey-progress {
+  background: transparent;
+  border: 0;
+  border-left: 3px solid #82956c;
+  border-radius: 0;
+  padding: 4px 0 4px 18px;
+  margin-bottom: 24px;
+}
+.work-mode .journey-steps {
+  margin-bottom: 12px;
+  gap: 10px 16px;
+}
+.work-mode .journey-steps li > span {
+  width: 19px;
+  height: 19px;
+}
+.work-mode .journey-summary {
+  align-items: center;
+  gap: 20px;
+}
+.work-mode .journey-summary h2 {
+  font-size: 19px;
+  margin: 4px 0;
+}
+.work-mode .journey-summary .eyebrow {
+  font-size: 10px;
+}
+.journey-explanation {
+  border: 0;
+  padding: 0;
+  margin: 4px 0;
+}
+.journey-explanation summary {
+  min-height: 26px;
+  font-size: 12px;
+  color: var(--color-muted-ink);
+}
+.journey-explanation p {
+  max-width: 70ch;
+  font-size: 14px;
+}
+.work-mode .journey-handoff small {
+  font-size: 10px;
+  margin-top: 4px;
+}
+.work-mode .tabs {
+  margin: 18px 0;
+}
+.work-mode .tabs button {
+  background: #fff;
+  border-color: #d7ddd6;
+  font-size: 14px;
+}
+.work-mode .tabs button[aria-current="step"],
+.work-mode .tabs button[aria-selected="true"] {
+  background: var(--color-ink);
+  color: white;
+}
+.work-mode .money-rows .total {
+  background: #edf0e6;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 6px -12px;
+}
+.work-mode .payment-panel .status {
+  background: #f8e9b4;
+  color: #23352b;
+}
+.work-mode .notice {
+  background: #edf0e6;
+  border-left-width: 2px;
+}
+.work-mode .form-field-group {
+  margin-bottom: 20px;
+}
+.work-mode .form-field-group legend {
+  margin-bottom: 12px;
+}
+.work-mode .form-actions {
+  margin-top: 20px;
+  padding-top: 18px;
+}
+.work-mode .site-footer {
+  background: #fafaf6;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .discovery-mode .venue-photo:hover img {
+    transform: scale(1.04);
+  }
+  .app-shell .button-primary {
+    transition:
+      transform 0.18s ease,
+      background 0.18s ease;
+  }
+  .app-shell .button-primary:hover {
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 1000px) {
+  .venue-hero-grid {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 20px;
+  }
+  .venue-hero-grid .quote-card {
+    padding: 22px;
+  }
+  .venue-hero-grid .gallery-stage {
+    height: 370px;
+  }
+  .app-shell .site-header {
+    gap: 20px;
+    padding-inline: 24px;
+  }
+  .app-shell .site-header nav {
+    gap: 6px;
+  }
+  .venue-detail-page .detail-grid {
+    gap: 28px;
+  }
+  .work-mode .journey-summary {
+    flex-direction: row;
+  }
+}
+@media (max-width: 700px) {
+  .app-shell .site-header,
+  .work-mode .site-header {
+    height: auto;
+    padding: 20px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .app-shell .brand {
+    font-size: 24px;
+  }
+  .app-shell .site-header nav {
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 5px;
+    padding-bottom: 4px;
+  }
+  .app-shell .site-header nav a {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 12px;
+    padding: 8px 11px;
+  }
+  .discovery-mode .container {
+    padding-top: 24px;
+  }
+  .discovery-mode .market-heading {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+  }
+  .discovery-mode .market-heading h1 {
+    max-width: 95%;
+    font-size: clamp(36px, 9.8vw, 52px);
+  }
+  .discovery-mode .market-heading .lead {
+    font-size: 15px;
+  }
+  .gathering-mark,
+  .venue-discovery .gathering-mark {
+    font-size: 86px;
+    right: 0;
+    top: -10px;
+    opacity: 0.42;
+  }
+  .discovery-mode .editorial-note {
+    display: none;
+  }
+  .discovery-mode .search-bar {
+    border-radius: 18px;
+    padding: 20px;
+  }
+  .discovery-mode .venue-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .discovery-mode .venue-card:nth-child(2) {
+    margin-top: 0;
+  }
+  .discovery-mode .venue-photo {
+    aspect-ratio: 1.4;
+  }
+  .welcome-page .journey-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .journey-art {
+    height: 200px;
+  }
+  .venue-detail-page > .page-heading h1 {
+    font-size: clamp(36px, 10vw, 48px);
+  }
+  .venue-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "quote" "gallery";
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+  .venue-hero-grid .quote-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 12px;
+    padding: 20px;
+    border-radius: 18px;
+  }
+  .venue-hero-grid .quote-card::after {
+    display: none;
+  }
+  .venue-hero-grid .quote-card .eyebrow {
+    grid-column: 1/-1;
+    margin: 0;
+    font-size: 10px;
+  }
+  .venue-hero-grid .quote-card h2 {
+    font-size: 29px;
+    margin: 0;
+    align-self: center;
+  }
+  .venue-hero-grid .quote-card > .button {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 10px 14px;
+    font-size: 13px;
+    width: auto;
+  }
+  .venue-hero-grid .quote-card > p:not(.eyebrow) {
+    grid-column: 1/-1;
+    font-size: 12px;
+    margin: 6px 0 0;
+  }
+  .venue-hero-grid .quote-card .notice {
+    grid-column: 1/-1;
+    margin: 0;
+    padding: 8px 0 0;
+    font-size: 11px;
+  }
+  .venue-hero-grid .gallery-stage {
+    height: 265px;
+    border-radius: 18px 18px 64px 18px;
+  }
+  .venue-hero-grid .gallery-controls button {
+    font-size: 12px;
+  }
+  .venue-detail-page .detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .venue-detail-page .detail-grid > .venue-calendar {
+    padding: 18px;
+    border-radius: 20px;
+  }
+  .discovery-mode .event-banner {
+    padding: 24px;
+    border-radius: 20px 20px 50px 20px;
+  }
+  .work-mode .container {
+    padding-top: 20px;
+  }
+  .work-mode .page-heading {
+    gap: 10px;
+  }
+  .work-mode .page-heading > .button {
+    padding: 0;
+    min-height: 32px;
+    font-size: 12px;
+  }
+  .work-mode .page-heading h1 {
+    font-size: 28px;
+  }
+  .work-mode .page-heading .lead {
+    font-size: 13px;
+  }
+  .work-mode .panel {
+    padding: 20px;
+  }
+  .work-mode .journey-progress {
+    padding-left: 12px;
+    margin-bottom: 20px;
+  }
+  .work-mode .journey-steps {
+    gap: 8px 10px;
+    font-size: 10px;
+  }
+  .work-mode .journey-summary {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .work-mode .journey-summary .small {
+    font-size: 12px;
+  }
+  .work-mode .journey-summary h2 {
+    font-size: 18px;
+  }
+  .work-mode .journey-handoff {
+    max-width: none;
+  }
+  .work-mode .journey-handoff .button {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  .work-mode .journey-handoff small {
+    display: inline;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .venue-hero-grid .quote-card {
+    grid-template-columns: 1fr;
+  }
+  .venue-hero-grid .quote-card > .button {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+  }
+}
+@media print {
+  .journey-art,
+  .gathering-mark {
+    display: none;
+  }
+  .work-mode {
+    background: white;
+  }
+  .work-mode .container {
+    padding: 0;
+  }
+}
+.discovery-mode .venue-card .venue-meta,
+.discovery-mode .venue-card .venue-bottom small {
+  color: #435044;
+}

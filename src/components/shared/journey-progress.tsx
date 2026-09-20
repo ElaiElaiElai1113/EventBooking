@@ -32,7 +32,10 @@ export function JourneyProgress({ id }: { id: string }) {
               : "CURRENT STAGE"}
           </p>
           <h2 aria-live="polite">{j.stage}</h2>
-          <p>{j.detail}</p>
+          <details className="journey-explanation">
+            <summary>About this step</summary>
+            <p>{j.detail}</p>
+          </details>
           {j.deadline && (
             <p className="small">
               {stamp(state.now) > stamp(j.deadline)
