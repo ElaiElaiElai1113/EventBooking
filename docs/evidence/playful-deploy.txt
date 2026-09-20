@@ -1,0 +1,87 @@
+Retrieving project…
+Deploying elaielaielai1113s-projects/eventbooking
+Uploading [--------------------] (0.0B/4.5MB)
+Uploading [=====---------------] (1.1MB/4.5MB)
+Uploading [==========----------] (2.3MB/4.5MB)
+Uploading [===============-----] (3.4MB/4.5MB)
+Uploading [====================] (4.5MB/4.5MB)
+Inspect: https://vercel.com/elaielaielai1113s-projects/eventbooking/3iqGXeLtczG14rabN9jLDz22vseW [5s]
+Production: https://eventbooking-kfmyqv0hb-elaielaielai1113s-projects.vercel.app [5s]
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Downloading 282 deployment files...
+Building: Downloading 282 deployment files...
+Building: Restored build cache from previous deployment (nqPQQmioK8pmtiV8otDkuEfiZ9Gw)
+Building: Running "vercel build"
+Building: Vercel CLI 59.23.2
+Building: Installing dependencies...
+Building: up to date in 2s
+Building: 175 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.3.5
+Building: Running "npm run build"
+Building: > eventbooking@1.0.0 build
+Building: > next build
+Building: ▲ Next.js 16.3.5 (Turbopack)
+Building: Applying modifyConfig from Vercel
+Building: ✓ Running next.config.ts took 311ms
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 3.9s
+Building: Running TypeScript ...
+Building: Finished TypeScript in 7.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/6) ...
+Building: Generating static pages using 1 worker (1/6)
+Building: Generating static pages using 1 worker (2/6)
+Building: Generating static pages using 1 worker (4/6)
+Building: ✓ Generating static pages using 1 worker (6/6) in 394ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ƒ /applications/[applicationId]
+Building: ├ ƒ /bookings/[bookingId]
+Building: ├ ƒ /events/[eventId]
+Building: ├ ƒ /events/[eventId]/apply
+Building: ├ ○ /organizer/events
+Building: ├ ƒ /organizer/events/[eventId]/applications
+Building: ├ ƒ /organizer/events/[eventId]/roster
+Building: ├ ƒ /organizer/events/[eventId]/setup
+Building: ├ ƒ /venue/events/[eventId]/review
+Building: ├ ○ /venue/requests
+Building: ├ ○ /venues
+Building: └ ƒ /venues/[venueId]
+Building: ○  (Static)   prerendered as static content
+Building: ƒ  (Dynamic)  server-rendered on demand
+Building: Build Completed in /vercel/output [18s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://eventbooking-kfmyqv0hb-elaielaielai1113s-projects.vercel.app [60s]
+Completing...
+Aliased: https://eventbooking-pi.vercel.app [60s]
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_3iqGXeLtczG14rabN9jLDz22vseW",
+    "url": "https://eventbooking-kfmyqv0hb-elaielaielai1113s-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/elaielaielai1113s-projects/eventbooking/3iqGXeLtczG14rabN9jLDz22vseW",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_3iqGXeLtczG14rabN9jLDz22vseW"
+  },
+  "message": "Deployment eventbooking-kfmyqv0hb-elaielaielai1113s-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel inspect eventbooking-kfmyqv0hb-elaielaielai1113s-projects.vercel.app --scope elaielaielai1113s-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope elaielaielai1113s-projects",
+      "when": "Promote to production"
+    }
+  ]
+}

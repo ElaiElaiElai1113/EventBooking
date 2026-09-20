@@ -1,0 +1,566 @@
+{
+  "base": "https://eventbooking-pi.vercel.app",
+  "checkedAt": "2026-09-20T13:53:14.861Z",
+  "results": [
+    {
+      "width": 320,
+      "scene": "venue-quote",
+      "label": "home",
+      "path": "/",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scene": "venue-quote",
+      "label": "catalog",
+      "path": "/venues",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scene": "venue-quote",
+      "label": "venue-quote",
+      "path": "/venues/sample-pavilion",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scene": "event-setup",
+      "label": "event-setup",
+      "path": "/organizer/events/makers-market-2026/setup",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scene": "merchant-proof-review",
+      "label": "merchant-proof-review",
+      "path": "/applications/paper-and-clay",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scene": "venue-quote",
+      "label": "home",
+      "path": "/",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scene": "venue-quote",
+      "label": "catalog",
+      "path": "/venues",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scene": "venue-quote",
+      "label": "venue-quote",
+      "path": "/venues/sample-pavilion",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scene": "event-setup",
+      "label": "event-setup",
+      "path": "/organizer/events/makers-market-2026/setup",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scene": "merchant-proof-review",
+      "label": "merchant-proof-review",
+      "path": "/applications/paper-and-clay",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scene": "venue-quote",
+      "label": "home",
+      "path": "/",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scene": "venue-quote",
+      "label": "catalog",
+      "path": "/venues",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scene": "venue-quote",
+      "label": "venue-quote",
+      "path": "/venues/sample-pavilion",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scene": "event-setup",
+      "label": "event-setup",
+      "path": "/organizer/events/makers-market-2026/setup",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scene": "merchant-proof-review",
+      "label": "merchant-proof-review",
+      "path": "/applications/paper-and-clay",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "scene": "venue-quote",
+      "label": "home",
+      "path": "/",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "scene": "venue-quote",
+      "label": "catalog",
+      "path": "/venues",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "scene": "venue-quote",
+      "label": "venue-quote",
+      "path": "/venues/sample-pavilion",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "scene": "event-setup",
+      "label": "event-setup",
+      "path": "/organizer/events/makers-market-2026/setup",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "scene": "merchant-proof-review",
+      "label": "merchant-proof-review",
+      "path": "/applications/paper-and-clay",
+      "errors": [],
+      "overflow": false,
+      "fonts": [
+        {
+          "name": "dm_sans_latin_400_normal-s.p.2o7k1_w7_w7bj.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_500_normal-s.p.2f4st7_5x_v78.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "dm_sans_latin_600_normal-s.p.32n_x70livn_1.woff2",
+          "bytes": 0
+        },
+        {
+          "name": "fraunces_latin_400_normal-s.p.0kyn6gd6d5zkc.woff2",
+          "bytes": 0
+        }
+      ],
+      "preloads": 4,
+      "brokenImages": []
+    }
+  ]
+}

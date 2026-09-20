@@ -18,5 +18,6 @@ Evidence uses the `playful-` prefix. Browser/device emulation is not testing on 
 
 ## Hosted verification
 
-Pending deployment and hosted checks.
+Production source: `ba0cdac6b072bcf4e5acc34a6603f879ff1bd1f0`. Vercel deployment `dpl_3iqGXeLtczG14rabN9jLDz22vseW` is READY on Node 22.x at https://eventbooking-pi.vercel.app.
 
+All 36 hosted accessibility, keyboard and improvement-flow tests passed across desktop Chromium, Pixel 5 Chromium and iPhone 13 WebKit (1.6 minutes, no retries). All 20 hosted layout checks passed. Catalog and mobile venue screenshots were inspected; the capture script waits for lazy image decoding before taking final screenshots. See `evidence/playful-hosted-browser.txt`, `evidence/playful-hosted-visual.json` and `evidence/playful-deployment.json`. Later evidence-only commits do not change application behavior.

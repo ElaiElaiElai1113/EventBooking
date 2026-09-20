@@ -29,6 +29,12 @@ for (const width of [320, 390, 768, 1440]) {
     await page.goto(base + path);
     await page.locator("h1").waitFor();
     await page.evaluate(() => document.fonts.ready);
+    await page.locator("img").evaluateAll(async (images) => {
+      images.forEach((image) => {
+        image.loading = "eager";
+      });
+      await Promise.all(images.map((image) => image.decode().catch(() => {})));
+    });
     const metrics = await page.evaluate(() => ({
       overflow: document.documentElement.scrollWidth > innerWidth,
       fonts: performance
