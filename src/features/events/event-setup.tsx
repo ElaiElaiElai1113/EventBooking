@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useDemo } from "@/demo/demo-provider";
+import { JourneyProgress } from "@/components/shared/journey-progress";
+import { StepNavigation } from "@/components/shared/step-navigation";
 import { RecordForm, type Field } from "@/components/shared/record-form";
 import {
   PageHeading,
@@ -60,17 +62,13 @@ export function EventSetup() {
             <ActionLink href="/organizer/events">Save and exit</ActionLink>
           }
         />
-        <nav className="tabs" aria-label="Event setup steps">
-          {steps.map((s, i) => (
-            <button
-              key={s}
-              aria-current={step === s ? "step" : undefined}
-              onClick={() => nav("setupStep", s)}
-            >
-              {i + 1}. {labels[i]}
-            </button>
-          ))}
-        </nav>
+        <JourneyProgress id={e.id} />
+        <StepNavigation
+          steps={steps}
+          labels={labels}
+          step={step}
+          onChange={(s) => nav("setupStep", s)}
+        />
         {step === "details" && (
           <section className="panel">
             <h2>Start with the essentials.</h2>

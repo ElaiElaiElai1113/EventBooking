@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useDemo } from "@/demo/demo-provider";
+import { JourneyProgress } from "@/components/shared/journey-progress";
 import { PageHeading, RoleGate } from "@/components/shared/common";
 import { ReviewPacket } from "./review-packet";
 import { CoordinationPanel } from "./coordination-panel";
@@ -18,6 +19,7 @@ export function VenueReview() {
           title="Agree the space. Shape the event."
           description="Review the current event use, layout and rules. Merchant selection belongs to the organizer."
         />
+        <JourneyProgress id={state.event.id} />
         <div className="two-columns">
           <section className="panel">
             <h2>{state.event.name}</h2>

@@ -1,5 +1,6 @@
 "use client";
 import { useDemo } from "@/demo/demo-provider";
+import { JourneyProgress } from "@/components/shared/journey-progress";
 import {
   PageHeading,
   RoleGate,
@@ -47,6 +48,7 @@ export function BookingDetail({
             description={`${b.draft.name} · ${state.venues.find((v) => v.id === b.venueId)?.name}`}
           />
         )}
+        <JourneyProgress id={id} />
         <div className={embedded ? "stack" : "two-columns"}>
           <section className="panel">
             <h2>{b.draft.name}&apos;s inquiry</h2>

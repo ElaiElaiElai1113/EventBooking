@@ -8,6 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { MotionConfig } from "motion/react";
+import { LoadingState } from "@/components/shared/loading-state";
 import type { DemoState, Role } from "@/domain/model";
 import type { Action } from "@/domain/commands";
 import { transition } from "@/domain/transition";
@@ -88,9 +89,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
     );
   if (!state)
     return (
-      <main className="container">
-        <p role="status">Loading your local demo…</p>
-      </main>
+      <main><LoadingState /></main>
     );
   const value: Context = {
     state,

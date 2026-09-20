@@ -1,0 +1,39 @@
+
+> eventbooking@1.0.0 build
+> next build
+
+▲ Next.js 16.3.5 (Turbopack)
+✓ Running next.config.ts took 26ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 631ms
+  Running TypeScript ...
+  Finished TypeScript in 1942ms ...
+  Collecting page data using 16 workers ...
+  Generating static pages using 16 workers (0/6) ...
+  Generating static pages using 16 workers (1/6) 
+  Generating static pages using 16 workers (2/6) 
+  Generating static pages using 16 workers (4/6) 
+✓ Generating static pages using 16 workers (6/6) in 488ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /applications/[applicationId]
+├ ƒ /bookings/[bookingId]
+├ ƒ /events/[eventId]
+├ ƒ /events/[eventId]/apply
+├ ○ /organizer/events
+├ ƒ /organizer/events/[eventId]/applications
+├ ƒ /organizer/events/[eventId]/roster
+├ ƒ /organizer/events/[eventId]/setup
+├ ƒ /venue/events/[eventId]/review
+├ ○ /venue/requests
+├ ○ /venues
+└ ƒ /venues/[venueId]
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

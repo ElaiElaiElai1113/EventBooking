@@ -1,5 +1,6 @@
 "use client";
 import { useDemo } from "@/demo/demo-provider";
+import { JourneyProgress } from "@/components/shared/journey-progress";
 import {
   PageHeading,
   RoleGate,
@@ -35,6 +36,7 @@ export function ApplicationDetail({ id }: { id: string }) {
           }
           description="Same application. Clear next steps. No need to start again when a preference is taken."
         />
+        <JourneyProgress id={id} />
         <p data-testid="application-reference" className="small muted">
           Application reference: {a.id}
         </p>

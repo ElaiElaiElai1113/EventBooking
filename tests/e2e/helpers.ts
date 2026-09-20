@@ -9,6 +9,11 @@ export async function role(page: Page, value: string) {
     .getByRole("button", { name: "Close demo controls", exact: true })
     .click();
 }
+export async function setupStep(page: Page, label: string) {
+  const toggle = page.getByRole("button", { name: /Step \d of 5/ });
+  if ((page.viewportSize()?.width ?? 1440) <= 600) await toggle.click();
+  await page.getByRole("button", { name: label, exact: true }).click();
+}
 export async function loadScene(page: Page, scene: string, value: string) {
   await page.goto("/");
   page.on("dialog", (dialog) => dialog.accept());

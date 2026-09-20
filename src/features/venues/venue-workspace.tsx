@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useDemo } from "@/demo/demo-provider";
 import { RoleGate, PageHeading, Status } from "@/components/shared/common";
 import { BookingDetail } from "./booking-detail";
+import { VenueCalendar } from "./venue-calendar";
 import { agreementStatus, latestAgreement } from "@/domain/selectors";
 import { dateTime } from "@/domain/time";
 export function VenueWorkspace() {
@@ -39,6 +40,7 @@ export function VenueWorkspace() {
         {view === "calendar" && (
           <section className="panel">
             <h2>Whole-venue calendar</h2>
+            <VenueCalendar key={state.identity} venueId={state.identity} />
             <p className="small">
               An accessible interval list; no external calendar sync.
             </p>

@@ -1,12 +1,10 @@
 import { expect, test } from "@playwright/test";
-import { loadScene, role, advanceTime } from "./helpers";
+import { loadScene, role, advanceTime, setupStep } from "./helpers";
 test("current packet review gates agreement and complete publication", async ({
   page,
 }) => {
   await loadScene(page, "event-setup", "organizer");
-  await page
-    .getByRole("button", { name: "5. Preview & publish", exact: true })
-    .click();
+  await setupStep(page, "5. Preview & publish");
   await expect(
     page.getByRole("button", { name: "Publish event", exact: true }),
   ).toBeDisabled();
@@ -27,9 +25,7 @@ test("current packet review gates agreement and complete publication", async ({
   await expect(page.getByTestId("venue-agreement-status")).toHaveText("Agreed");
   await role(page, "organizer");
   await page.goto("/organizer/events/makers-market-2026/setup");
-  await page
-    .getByRole("button", { name: "5. Preview & publish", exact: true })
-    .click();
+  await setupStep(page, "5. Preview & publish");
   await page
     .getByRole("button", { name: "Publish event", exact: true })
     .click();
@@ -61,9 +57,7 @@ test("required revision blocks agreement; optional meeting never approves", asyn
   );
   await role(page, "organizer");
   await page.goto("/organizer/events/makers-market-2026/setup");
-  await page
-    .getByRole("button", { name: "2. Venue & layout", exact: true })
-    .click();
+  await setupStep(page, "2. Venue & layout");
   await page
     .getByText("Private messages & optional meetings", { exact: true })
     .click();

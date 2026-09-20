@@ -119,6 +119,7 @@ test("scene loading refreshes the displayed clock and continue returns to the la
     .getByRole("button", { name: "Close demo controls", exact: true })
     .click();
   await page.goto("/events/makers-market-2026/apply");
+  await expect(page.getByLabel("Business name", { exact: true })).toBeVisible();
   await page.goto("/");
   await page
     .getByRole("link", { name: "Continue current scene", exact: true })

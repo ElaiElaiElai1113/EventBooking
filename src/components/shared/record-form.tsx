@@ -95,59 +95,68 @@ export function RecordForm({
             ))}
         </div>
       )}
-      <div className="form-grid">
-        {fields.map((f) => (
-          <div key={f.name} className={f.full ? "full" : ""}>
-            <label htmlFor={`${prefix}-${f.name}`}>
-              {f.label}
-              {!f.required && <span className="muted"> · optional</span>}
-            </label>
-            {f.options ? (
-              <select
-                id={`${prefix}-${f.name}`}
-                aria-label={f.label}
-                aria-describedby={
-                  errors[f.name] ? `${prefix}-${f.name}-error` : undefined
-                }
-                {...register(f.name)}
-              >
-                {f.options.map((o) => (
-                  <option value={o.value} key={o.value}>
-                    {o.label}
-                  </option>
-                ))}
-              </select>
-            ) : f.type === "textarea" ? (
-              <textarea
-                id={`${prefix}-${f.name}`}
-                aria-label={f.label}
-                aria-describedby={
-                  errors[f.name] ? `${prefix}-${f.name}-error` : undefined
-                }
-                aria-invalid={!!errors[f.name]}
-                {...register(f.name)}
-              />
-            ) : (
-              <input
-                id={`${prefix}-${f.name}`}
-                aria-label={f.label}
-                aria-describedby={
-                  errors[f.name] ? `${prefix}-${f.name}-error` : undefined
-                }
-                type={f.type ?? "text"}
-                aria-invalid={!!errors[f.name]}
-                {...register(f.name)}
-              />
-            )}{" "}
-            {f.help && <p className="small muted">{f.help}</p>}
-            {errors[f.name] && (
-              <p id={`${prefix}-${f.name}-error`} className="field-error">
-                {String(errors[f.name]?.message)}
-              </p>
-            )}
-          </div>
+      {[fields.filter((f) => f.required), fields.filter((f) => !f.required)]
+        .filter((group) => group.length)
+        .map((group, index) => (
+          <fieldset className="form-field-group" key={index}>
+            <legend>
+              {group[0].required ? "Required details" : "Optional details"}
+            </legend>
+            <div className="form-grid">
+              {group.map((f) => (
+                <div key={f.name} className={f.full ? "full" : ""}>
+                  <label htmlFor={`${prefix}-${f.name}`}>
+                    {f.label}
+                    {!f.required && <span className="muted"> · optional</span>}
+                  </label>
+                  {f.options ? (
+                    <select
+                      id={`${prefix}-${f.name}`}
+                      aria-label={f.label}
+                      aria-describedby={
+                        errors[f.name] ? `${prefix}-${f.name}-error` : undefined
+                      }
+                      {...register(f.name)}
+                    >
+                      {f.options.map((o) => (
+                        <option value={o.value} key={o.value}>
+                          {o.label}
+                        </option>
+                      ))}
+                    </select>
+                  ) : f.type === "textarea" ? (
+                    <textarea
+                      id={`${prefix}-${f.name}`}
+                      aria-label={f.label}
+                      aria-describedby={
+                        errors[f.name] ? `${prefix}-${f.name}-error` : undefined
+                      }
+                      aria-invalid={!!errors[f.name]}
+                      {...register(f.name)}
+                    />
+                  ) : (
+                    <input
+                      id={`${prefix}-${f.name}`}
+                      aria-label={f.label}
+                      aria-describedby={
+                        errors[f.name] ? `${prefix}-${f.name}-error` : undefined
+                      }
+                      type={f.type ?? "text"}
+                      aria-invalid={!!errors[f.name]}
+                      {...register(f.name)}
+                    />
+                  )}{" "}
+                  {f.help && <p className="small muted">{f.help}</p>}
+                  {errors[f.name] && (
+                    <p id={`${prefix}-${f.name}-error`} className="field-error">
+                      {String(errors[f.name]?.message)}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </fieldset>
         ))}
-      </div>
       <div className="form-actions">
         <span className="small muted">
           {saved.startsWith("Not saved")

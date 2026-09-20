@@ -1,6 +1,7 @@
 "use client";
 import type { Application } from "@/domain/model";
 import { useDemo } from "@/demo/demo-provider";
+import { JourneyProgress } from "@/components/shared/journey-progress";
 import { RecordForm } from "@/components/shared/record-form";
 import { Button } from "@/components/ui/button";
 import { PaymentPanel } from "@/features/payments/payment-panel";
@@ -16,6 +17,7 @@ export function ReviewActions({
   const offer = latestAgreement(state, a.id);
   return (
     <div className="stack">
+      <JourneyProgress id={a.id} />
       <OfferEditor key={a.id} application={a} />
       {offer && <PaymentPanel key={offer.id} agreement={offer} />}
       <div className="action-row">

@@ -29,6 +29,10 @@ node node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 3100
 
 ## Present the journeys
 
+The **Journey progress** panel shows the current stage, who acts next and any applicable deadline. Use **Continue as venue reviewer/customer/organizer/merchant** when offered to switch perspective on the same record without resetting the scene. Detailed actions still run through the existing review, acceptance and receipt controls.
+
+Venue pages now include a setting photo, two labeled layout concepts, quote guidance and an anonymous monthly availability calendar. Select a day to inspect held/confirmed access intervals, including setup and cleanup. “Available” means no recorded hold in this fictional demo, not guaranteed availability; choosing a day does not reserve it or change an inquiry. On mobile, use **Change step** to navigate event setup; drafts persist between steps.
+
 Start on the home page and choose a journey. Starting a journey or loading a scene explicitly confirms replacing the current fictional scene. Ordinary links, form changes and refresh preserve local work. “Continue current scene” returns to your last product route.
 
 The small **Demo controls** button switches role/fictional identity, loads named scenes, advances the deterministic Philippine sample clock, retries a failed save or resets. Advancing time changes the sample state; real wall-clock time does not expire offers. Merchant default is Paper and Clay; organizer is Sample Market Team; venue default is Sample Hall; customer is Alex.
@@ -87,6 +91,7 @@ Then run `node scripts/final-visual-check.mjs` in another terminal. It writes sc
 
 - [Implementation evidence and all R01–R48 mappings](docs/implementation-evidence.md)
 - [Vercel deployment and hosted verification](docs/vercel-deployment.md)
+- [Demo improvements and browser verification](docs/demo-improvements.md)
 - [Master requirements](PROJECT_MASTER.md) — original requirement text retained
 - [Connected-demo readiness](docs/connected-demo-readiness.md) — future Supabase security/transactions and Vercel preview gates
 - [Asset register](docs/asset-register.md)
